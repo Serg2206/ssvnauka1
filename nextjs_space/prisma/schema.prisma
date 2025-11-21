@@ -1,0 +1,151 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/ssvnauka/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  STUDENT  // студент
+  SURGEON  // хирург
+  PATIENT  // пациент
+  ADMIN    // администратор
+}
+
+enum CourseLevel {
+  BASIC     // базовый (для студентов)
+  ADVANCED  // продвинутый (для начинающих хирургов)
+  EXPERT    // экспертный (для опытных хирургов)
+}
+
+enum OperationType {
+  GASTRECTOMY          // гастрэктомия
+  LIVER_RESECTION      // резекция печени
+  CHOLECYSTECTOMY      // холецистэктомия
+  COLECTOMY            // колэктомия
+  PANCREATIC_SURGERY   // операции на поджелудочной
+  HERNIA_REPAIR        // герниопластика
+  APPENDECTOMY         // аппендэктомия
+  ESOPHAGEAL_SURGERY   // операции на пищеводе
+  OTHER                // другое
+}
+
+enum SurgicalMethod {
+  LAPAROSCOPIC   // лапароскопический
+  ROBOTIC        // роботизированный
+  OPEN           // открытый
+  HYBRID         // гибридный
+}
+
+enum Difficulty {
+  BASIC     // базовая
+  MEDIUM    // средняя
+  HIGH      // высокая
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  password      String
+  role          UserRole  @default(STUDENT)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Course {
+  id            String      @id @default(cuid())
+  title         String
+  description   String      @db.Text
+  level         CourseLevel
+  durationHours Int
+  imageUrl      String?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Video {
+  id              String          @id @default(cuid())
+  title           String
+  description     String          @db.Text
+  operationType   OperationType
+  method          SurgicalMethod
+  difficulty      Difficulty
+  author          String
+  clinic          String
+  durationMinutes Int
+  thumbnailUrl    String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+model Article {
+  id          String   @id @default(cuid())
+  title       String
+  content     String   @db.Text
+  category    String
+  excerpt     String   @db.Text
+  publishedAt DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String   @db.Text
+  answer    String   @db.Text
+  category  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model GlossaryTerm {
+  id          String   @id @default(cuid())
+  term        String
+  definition  String   @db.Text
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
