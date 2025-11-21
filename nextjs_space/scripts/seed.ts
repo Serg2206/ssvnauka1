@@ -42,7 +42,7 @@ async function main() {
   console.log('✅ Пользователи созданы');
 
   // Создание курсов (15 курсов)
-  const courses = [
+  const coursesData = [
     // БАЗОВЫЕ КУРСЫ (5 курсов)
     {
       title: 'Основы абдоминальной хирургии',
@@ -153,8 +153,10 @@ async function main() {
     },
   ];
 
-  for (const course of courses) {
-    await prisma.course.create({ data: course });
+  const courses = [];
+  for (const courseData of coursesData) {
+    const course = await prisma.course.create({ data: courseData });
+    courses.push(course);
   }
 
   console.log('✅ Курсы созданы (15 курсов)');
@@ -2926,7 +2928,101 @@ D1 + все лимфоузлы N2.
   }
 
   console.log('✅ Глоссарий создан (30 терминов)');
+
+  // Создание тестов для каждого курса
+  console.log('📝 Создание тестов...');
+  
+  const quizzes = [];
+  for (const course of courses) {
+    const quiz = await prisma.quiz.create({
+      data: {
+        title: `Quiz: ${course.title}`,
+        description: `Test your knowledge after completing ${course.title}`,
+        passingScore: 70,
+        course: {
+          connect: { id: course.id }
+        },
+        questions: {
+          create: generateQuizQuestions(course.title)
+        }
+      },
+      include: {
+        questions: true
+      }
+    });
+    quizzes.push(quiz);
+  }
+
+  console.log(`✅ Тесты созданы (${quizzes.length} тестов)`);
   console.log('🎉 База данных успешно наполнена!');
+}
+
+// Функция для генерации вопросов теста
+function generateQuizQuestions(courseTitle: string) {
+  const baseQuestions = [
+    {
+      question: "What is the primary goal of minimally invasive surgery?",
+      options: [
+        "Reduced recovery time and minimal scarring",
+        "Increased surgical duration",
+        "Higher complication rates",
+        "Traditional open approach benefits"
+      ],
+      correctAnswer: 0,
+      explanation: "Minimally invasive surgery aims to reduce trauma, leading to faster recovery and minimal scarring.",
+      order: 1
+    },
+    {
+      question: "Which technique is commonly used in laparoscopic procedures?",
+      options: [
+        "Large incisions",
+        "Trocar insertion and pneumoperitoneum",
+        "No visualization required",
+        "Manual palpation only"
+      ],
+      correctAnswer: 1,
+      explanation: "Laparoscopic procedures use trocars for instrument insertion and create pneumoperitoneum for visualization.",
+      order: 2
+    },
+    {
+      question: "What is a key advantage of robotic-assisted surgery?",
+      options: [
+        "Lower cost",
+        "Enhanced precision and dexterity",
+        "Faster procedure time",
+        "No learning curve"
+      ],
+      correctAnswer: 1,
+      explanation: "Robotic systems provide enhanced precision, 3D visualization, and improved dexterity for complex procedures.",
+      order: 3
+    },
+    {
+      question: "What should be assessed during preoperative evaluation?",
+      options: [
+        "Only patient's age",
+        "Comprehensive medical history and comorbidities",
+        "Surgical room availability only",
+        "None of the above"
+      ],
+      correctAnswer: 1,
+      explanation: "Preoperative evaluation must include complete medical history, comorbidities, and risk assessment.",
+      order: 4
+    },
+    {
+      question: "What is the most critical step in preventing surgical complications?",
+      options: [
+        "Rushing through procedures",
+        "Proper sterile technique and preparation",
+        "Skipping safety checklists",
+        "Ignoring patient concerns"
+      ],
+      correctAnswer: 1,
+      explanation: "Proper sterile technique, thorough preparation, and adherence to safety protocols are essential.",
+      order: 5
+    }
+  ];
+
+  return baseQuestions;
 }
 
 main()
