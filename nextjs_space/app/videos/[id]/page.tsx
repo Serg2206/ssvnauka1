@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Clock, Video as VideoIcon, ArrowLeft, User, Building, ExternalLink, Lock } from 'lucide-react';
+import { Clock, Video as VideoIcon, ArrowLeft, User, Building, ExternalLink, Lock, GraduationCap } from 'lucide-react';
 import { prisma } from '@/lib/db';
 import { SurgicalMethod, Difficulty } from '@/lib/types';
 
@@ -115,6 +115,46 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
                     <p className="text-sm text-slate-400 mt-4">
                       <ExternalLink size={14} className="inline mr-1" />
                       Откроется в новой вкладке • Некоммерческая организация
+                    </p>
+                  </div>
+                </div>
+              ) : video.videoUrl.includes('laparoscopyhospital.com') ? (
+                // World Laparoscopy Hospital External Link Display
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
+                  {video.thumbnailUrl && (
+                    <>
+                      <Image
+                        src={video.thumbnailUrl}
+                        alt={video.title}
+                        fill
+                        className="object-cover opacity-30"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-amber-900/95 via-amber-900/70 to-amber-900/50" />
+                    </>
+                  )}
+                  <div className="relative z-10 text-center">
+                    <div className="mb-6 inline-flex items-center justify-center w-20 h-20 bg-amber-600/20 backdrop-blur-sm rounded-full border-2 border-amber-400/50">
+                      <GraduationCap className="text-amber-400" size={40} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      Бесплатное образовательное видео World Laparoscopy Hospital
+                    </h3>
+                    <p className="text-slate-300 mb-6 max-w-md">
+                      Образовательный контент от World Laparoscopy Hospital (Индия, Дубай, США). <br/>
+                      <strong className="text-amber-400">Полностью бесплатный доступ!</strong>
+                    </p>
+                    <a
+                      href={video.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                    >
+                      <ExternalLink size={20} />
+                      Открыть образовательное видео
+                    </a>
+                    <p className="text-sm text-slate-400 mt-4">
+                      <ExternalLink size={14} className="inline mr-1" />
+                      Откроется в новой вкладке • 6,040+ образовательных видео
                     </p>
                   </div>
                 </div>
