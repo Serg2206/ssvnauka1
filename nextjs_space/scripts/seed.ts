@@ -16,24 +16,34 @@ async function main() {
   await prisma.user.deleteMany();
 
   // Создание тестовых пользователей
-  const hashedPassword = await bcrypt.hash('johndoe123', 10);
-  const hashedTestPassword = await bcrypt.hash('test123456', 10);
+  const adminPassword = await bcrypt.hash('admin123', 10);
+  const surgeonPassword = await bcrypt.hash('surgeon123', 10);
+  const studentPassword = await bcrypt.hash('student123', 10);
 
   await prisma.user.create({
     data: {
-      email: 'john@doe.com',
-      password: hashedPassword,
-      name: 'Администратор',
+      email: 'admin@ssvnauka.com',
+      password: adminPassword,
+      name: 'Администратор Системы',
       role: "ADMIN",
     },
   });
 
   await prisma.user.create({
     data: {
-      email: 'test@ssvnauka.com',
-      password: hashedTestPassword,
-      name: 'Тестовый Пользователь',
+      email: 'surgeon@hospital.com',
+      password: surgeonPassword,
+      name: 'Хирург-практик',
       role: "SURGEON",
+    },
+  });
+
+  await prisma.user.create({
+    data: {
+      email: 'student@meduni.com',
+      password: studentPassword,
+      name: 'Студент-медик',
+      role: "STUDENT",
     },
   });
 
