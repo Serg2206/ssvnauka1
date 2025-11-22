@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
-import { CourseLevel } from '@/lib/types';
 import CourseDetailClient from './course-detail-client';
 
 export const dynamic = 'force-dynamic';

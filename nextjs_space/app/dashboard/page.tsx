@@ -212,10 +212,10 @@ export default function DashboardPage() {
 
       {/* Вкладки */}
       <Tabs defaultValue="progress" className="space-y-6">
-        <TabsList role="tablist">
-          <TabsTrigger value="progress" role="tab">Прогресс обучения</TabsTrigger>
-          <TabsTrigger value="bookmarks" role="tab">Закладки ({bookmarks.length})</TabsTrigger>
-          <TabsTrigger value="certificates" role="tab">Сертификаты ({certificates.length})</TabsTrigger>
+        <TabsList>
+          <TabsTrigger value="progress">Прогресс обучения</TabsTrigger>
+          <TabsTrigger value="bookmarks">Закладки ({bookmarks.length})</TabsTrigger>
+          <TabsTrigger value="certificates">Сертификаты ({certificates.length})</TabsTrigger>
         </TabsList>
 
         {/* Прогресс обучения */}
