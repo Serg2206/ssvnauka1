@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **51 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **69 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (51 Total - Greatly Expanded Library!)
+## 📊 Videos Added (69 Total - Comprehensive Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -71,6 +71,27 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 49. **Endoscopic Submucosal Dissection (ESD) of the Rectum** (43:00)
 50. **Endoscopic Management of Esophageal Variceal Bleeding** (18:00)
 51. **Endoscopic Full-Thickness Resection (EFTR) Technique** (16:00)
+
+### NEW VIDEOS - Colorectal, Transanal & Proctological Surgery (18 Additional Videos):
+
+52. **Laparoscopic Redo Ventral Mesh Rectopexy for Rectal Prolapse** (05:00) - K Jottard
+53. **Volvulus on Colonic Duplication in 5-Week-Old Baby: Laparoscopic Approach** (04:00) - D Forgues
+54. **Robotic Total Mesorectal Excision (TME) Guided by 3D Reconstruction** (06:00) - J Azevedo, B Polis
+55. **Pure Robotic Transversectomy for Moderately Advanced Colon Cancer** (04:00) - LG Romagnolo
+56. **Laparoscopic Proctocolectomy with Ileal J-Pouch for FAP** (15:00) - EF López-Outón
+57. **TaTME for Complex Rectal Cancers Beyond the Learning Curve** (13:00) - P Sylla
+58. **Essential Surgical Anatomy in Performing TaTME** (16:00) - M Ito
+59. **Cranial-First Approach in Laparoscopic Right-Sided Colon Cancer Surgery** (07:00) - T Yamamoto
+60. **Three-Port Laparoscopic Left Colectomy for Splenic Flexure Tumor** (07:00) - M La Francesca
+61. **Transanal Total Mesorectal Excision (TaTME) for Advanced Low Rectal Adenocarcinoma** (09:00) - AR Sanchez
+62. **Laparoscopic Total Colectomy with End Ileostomy for Ulcerative Colitis** (10:00) - F Georgiades
+63. **Laparoscopic Extended Right Hemicolectomy with D3 Lymphadenectomy** (14:00) - E Gadirov
+64. **Laparoscopic Repair for Perineal Hernia after Abdominoperineal Resection** (08:00) - J Marques Antunes
+65. **ICG Fluorescence - 3D CT Image-Guided Robotic Colorectal Surgery** (10:00) - A Maiani
+66. **Robotic Intersphincteric Resection for Ultra-Low Rectal Cancer** (18:00)
+67. **Laparoscopic Sigmoid Colectomy for Diverticular Disease** (12:00)
+68. **Robotic Low Anterior Resection with Total Mesorectal Excision** (22:00)
+69. **Laparoscopic Hartmann Reversal with Colorectal Anastomosis** (15:00)
 
 ---
 
@@ -204,8 +225,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 93 videos
-- WebSurg Professional: 51 videos (GREATLY EXPANDED - 35 new videos added!)
+**Total Videos**: 111 videos
+- WebSurg Professional: 69 videos (COMPREHENSIVE LIBRARY - 53 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
