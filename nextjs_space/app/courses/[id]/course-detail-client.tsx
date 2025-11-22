@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react';
 import { Clock, ArrowLeft, CheckCircle, BookmarkIcon, Trophy, BookmarkCheckIcon } from 'lucide-react';
-import { CourseLevel } from '@prisma/client';
+import { CourseLevel } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';

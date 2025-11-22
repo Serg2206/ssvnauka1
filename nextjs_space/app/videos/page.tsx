@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Video as VideoIcon, Clock, Filter } from 'lucide-react';
 import { prisma } from '@/lib/db';
-import { OperationType, SurgicalMethod, Difficulty } from '@prisma/client';
+import { OperationType, SurgicalMethod, Difficulty } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -139,8 +139,8 @@ export default async function VideosPage({
   );
 }
 
-function getMethodLabel(method: SurgicalMethod) {
-  const labels = {
+function getMethodLabel(method: string) {
+  const labels: Record<string, string> = {
     LAPAROSCOPIC: 'Лапароскопия',
     ROBOTIC: 'Роботизированный',
     OPEN: 'Открытый',

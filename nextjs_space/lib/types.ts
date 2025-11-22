@@ -1,28 +1,32 @@
-export type Expense = {
-  id: string
-  amount: number
-  category: string
-  description: string
-  date: Date
-}
+// Типы для проекта SSV Nauka
 
-export type ExpenseFormData = Omit<Expense, 'id' | 'date'> & {
-  date: string
-}
+export type UserRole = 'ADMIN' | 'SURGEON' | 'STUDENT';
 
-export const EXPENSE_CATEGORIES = [
-  'Food',
-  'Transportation',
-  'Housing',
-  'Utilities',
-  'Entertainment',
-  'Healthcare',
-  'Shopping',
-  'Education',
-  'Other'
-] as const
+export type CourseLevel = 'BASIC' | 'ADVANCED' | 'EXPERT';
 
-export type DateRange = {
-  from: Date | undefined
-  to: Date | undefined
-}
+export type OperationType = 
+  | 'CHOLECYSTECTOMY'
+  | 'APPENDECTOMY'
+  | 'HERNIA_REPAIR'
+  | 'COLECTOMY'
+  | 'GASTRECTOMY'
+  | 'NEPHRECTOMY'
+  | 'PROSTATECTOMY'
+  | 'HYSTERECTOMY'
+  | 'SPLENECTOMY'
+  | 'BARIATRIC';
+
+export type SurgicalMethod = 
+  | 'LAPAROSCOPIC'
+  | 'ROBOTIC'
+  | 'OPEN'
+  | 'HYBRID';
+
+export type Difficulty = 
+  | 'BASIC'
+  | 'MEDIUM'
+  | 'HIGH'
+  | 'EXPERT'
+  | 'COMPLEX'
+  | 'INTERMEDIATE'
+  | 'ADVANCED';

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Clock, Video as VideoIcon, ArrowLeft, User, Building } from 'lucide-react';
 import { prisma } from '@/lib/db';
-import { SurgicalMethod, Difficulty } from '@prisma/client';
+import { SurgicalMethod, Difficulty } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -96,8 +96,8 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
   );
 }
 
-function getMethodLabel(method: SurgicalMethod) {
-  const labels = {
+function getMethodLabel(method: string) {
+  const labels: Record<string, string> = {
     LAPAROSCOPIC: 'Лапароскопический доступ',
     ROBOTIC: 'Роботизированная хирургия',
     OPEN: 'Открытый доступ',
@@ -106,11 +106,15 @@ function getMethodLabel(method: SurgicalMethod) {
   return labels[method] || method;
 }
 
-function getDifficultyLabel(difficulty: Difficulty) {
-  const labels = {
+function getDifficultyLabel(difficulty: string) {
+  const labels: Record<string, string> = {
     BASIC: 'Базовая сложность',
     MEDIUM: 'Средняя сложность',
     HIGH: 'Высокая сложность',
+    EXPERT: 'Экспертная сложность',
+    COMPLEX: 'Комплексная сложность',
+    INTERMEDIATE: 'Промежуточная сложность',
+    ADVANCED: 'Продвинутая сложность',
   };
   return labels[difficulty] || difficulty;
 }

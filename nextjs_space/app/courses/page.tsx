@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BookOpen, Clock, Filter } from 'lucide-react';
 import { prisma } from '@/lib/db';
-import { CourseLevel } from '@prisma/client';
+import { CourseLevel } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
@@ -95,8 +95,8 @@ export default async function CoursesPage({
   );
 }
 
-function getLevelLabel(level: CourseLevel) {
-  const labels = {
+function getLevelLabel(level: string) {
+  const labels: Record<string, string> = {
     BASIC: 'Базовый',
     ADVANCED: 'Продвинутый',
     EXPERT: 'Экспертный',
