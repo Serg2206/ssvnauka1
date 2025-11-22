@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **16 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **36 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (16 Total)
+## 📊 Videos Added (36 Total - Expanded Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -30,6 +30,29 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 14. **Epiphrenic Diverticula Surgery** (17:03)
 15. **EUS-Guided Radiofrequency Ablation of Pancreatic NET** (9:54)
 16. **EUS-Guided Biliary Drainage for Pancreatic Cancer** (13:29)
+
+### NEW VIDEOS - Expanded Library (20 Additional Videos):
+
+17. **Techniques of Hemostasis in Variceal Bleeding** (20:04) - M Ibrahim
+18. **Technique of Upper GI Polypectomy and Mucosal Resection** (28:27) - M Giovannini
+19. **Totally Robotic Esophagectomy and Esophagocoloplasty** (13:44) - A Pini Prato
+20. **Endotherapy for Zenker's and Epiphrenic Diverticula** (15:08) - P Familiari
+21. **Laparoscopic Heller Cardiomyotomy and Dor Fundoplication** (10:09) - B Barbosa
+22. **Intrathoracic Anastomosis in RAMIE** (21:04) - R Van Hillegersberg
+23. **Robotic Heller Cardiomyotomy with Dor Fundoplication** (10:24) - N Premraj
+24. **Zenker's Diverticulum: Surgical and Endoscopic Treatment** (12:52)
+25. **Endoscopic Resection of Duodenal Adenomas** (15:32)
+26. **Endoscopic Papillectomy Technique** (15:26)
+27. **Laparoscopic Ivor-Lewis with Standard Mediastinal Lymphadenectomy** (06:50) - N Zaala
+28. **Post-Esophagectomy Hiatal Hernia Repair** (09:05) - I Bertão Colaço
+29. **Robotic Gastrectomy with D2 Lymphadenectomy** (18:00)
+30. **Laparoscopic Distal Gastrectomy with Modified Billroth I** (15:06) - B Pomortsev
+31. **Esophageal Perforation Management** (22:00)
+32. **Endoscopic Stent Placement for Esophageal Strictures** (12:00)
+33. **Robotic Proximal Gastrectomy with Double-Tract Reconstruction** (19:00)
+34. **Peroral Endoscopic Myotomy (POEM) for Achalasia** (25:00)
+35. **Laparoscopic Paraesophageal Hernia Repair** (17:00)
+36. **Endoscopic Submucosal Dissection for Early Gastric Cancer** (24:00)
 
 ---
 
@@ -163,8 +186,9 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 46 videos
-- WebSurg Professional: 16 videos
+**Total Videos**: 78 videos
+- WebSurg Professional: 36 videos (EXPANDED - 20 new videos added!)
+- iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
 **Categories**:
