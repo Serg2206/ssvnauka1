@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **115 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **131 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (115 Total - Complete Surgical Library!)
+## 📊 Videos Added (131 Total - World-Class Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -148,6 +148,25 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 114. **Fluorescence-Guided Biliary Surgery: Technical Aspects and Clinical Applications** (18:00)
 115. **3D Laparoscopy in Hepatobiliary Surgery: Advantages and Learning Curve** (16:00)
 
+### NEW VIDEOS - Robotic Surgery (16 Additional Videos):
+
+116. **Totally Robotic Esophagectomy and Esophagocoloplasty for Severe Chemical Caustic Burn** (14:00) - A Pini Prato
+117. **Robotic Total Mesorectal Excision (TME) for Rectal Cancer Guided by 3D Reconstruction** (06:00) - J Azevedo
+118. **Robotic Single Port Toupet Fundoplication: VN-LoG-SP System Implementation** (09:00) - I Balian
+119. **Transthoracic Robotic Esophagectomy** (57:00) - VK Chao
+120. **Pure Robotic Transversectomy/Transverse Colectomy for Moderately Advanced Colon Cancer** (04:00) - LG Romagnolo
+121. **Robotic Assisted Enucleation of Esophageal Leiomyoma** (09:00) - H Paine
+122. **Robotic Assisted Laparoscopic Lateral Pancreatectojejunostomy for Chronic Calcific Pancreatitis** (08:00) - A Kapoor
+123. **Technical Principles of Robotic Urinary Diversion After Cystectomy** (32:00) - F Annino
+124. **Robotic Radical Prostatectomy in Post-Brachytherapy Patient** (19:00) - L Ortigara
+125. **Role of Single Port Robotic Surgery in Urology** (25:00) - S Crivellaro
+126. **Robotic Assisted Radical Cystectomy (RARC)** (27:00) - RF Coelho
+127. **Robotic Assisted Repair of Morgagni-Larrey Hernia in 17-Month-Old Girl** (05:00) - D Forgues
+128. **Robotic Radical Prostatectomy After Simple Prostatectomy with Millin Technique** (14:00) - L Ortigara
+129. **Transforming Endometriosis Management: Advances in Surgical Innovations and Robotics** (22:00) - H Ferreira Carvalho
+130. **Robotic Pancreaticoduodenectomy (Whipple): Step-by-Step Technique** (28:00)
+131. **Robotic Gastrectomy with D2 Lymphadenectomy for Gastric Cancer** (21:00)
+
 ---
 
 ## 🎯 How It Works
@@ -280,8 +299,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 157 videos
-- WebSurg Professional: 115 videos (COMPLETE LIBRARY - 99 new videos added!)
+**Total Videos**: 173 videos
+- WebSurg Professional: 131 videos (WORLD-CLASS LIBRARY - 115 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
