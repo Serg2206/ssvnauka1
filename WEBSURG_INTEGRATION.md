@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **207 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **219 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (207 Total - Complete Surgical Excellence!)
+## 📊 Videos Added (219 Total - Complete Surgical Excellence!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -258,6 +258,22 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 206. **Use of NIR Guided Surgery During Thyroidectomy and Parathyroidectomy** (08:00) - A Anuwong
 207. **Current State and Future Prospects in the Management of Advanced Thyroid Malignancies** (47:00) - G Randolph
 
+
+### NEW VIDEOS - Pediatric Surgery (12 Additional Videos):
+
+208. **Laparoscopic Hepatic Right Anterior Sectionectomy for Liver Tumor in a 14-Year-Old Child** (08:24) - D Akhaladze, N Merkulov, I Tverdov
+209. **Laparoscopic Repair of Gastric Perforation After Blunt Trauma in an Adolescent Using AirSeal®** (07:50) - C Destinval, V Gomola, JL Lemelle
+210. **Laparoscopic Roux-en-Y Cystojejunostomy for Congenital Solitary Intrahepatic Biliary Cyst** (08:52) - I Braga, S Martimbianco, M Lopez, J Correia-Pinto
+211. **Retroperitoneal Lumbar Sympathetic Blockage in a Pediatric Patient** (04:24) - A Pini Prato, F Fiocriti, C Nettuno
+212. **Laparoscopic Extraction of Ascaris Lumbricoides from the Biliary Tract in a Child** (06:11) - M Esculapio, P Sorrentino
+213. **Bilateral Thoracoscopic Approach in a Child with Posterior Mediastinal Neuroblastoma** (05:28) - D Forgues, L Solovat
+214. **Robotic Assisted Repair of Morgagni-Larrey Hernia in a 17-Month-Old Girl** (02:50) - J Meehan
+215. **Thoracoscopic Management of Postoperative Chylothorax in a Child** (05:58) - C Nettuno
+216. **Laparoscopic Cyst Excision Without Intestinal Resection for Ileocecal Duplication Cyst in a 2-Month-Old** (03:36) - V Gomola, JL Lemelle
+217. **Laparoscopic Liver Segmentectomy IVb with Segment V Resection for Hepatoblastoma in a 5-Year-Old** (06:00) - D Akhaladze, I Tverdov
+218. **Update on Thoracoscopic Repair of Esophageal Atresia and Tracheoesophageal Fistula (TEF)** (12:52) - M Esculapio
+219. **Laparoscopic Surgery for Locally Advanced Retroperitoneal Neuroblastoma in a Child** (09:25) - D Forgues
+
 ---
 
 ## 🎯 How It Works
@@ -390,8 +406,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 249 videos
-- WebSurg Professional: 207 videos (COMPLETE SURGICAL LIBRARY - 191 new videos added!)
+**Total Videos**: 261 videos
+- WebSurg Professional: 219 videos (COMPLETE SURGICAL LIBRARY - 203 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
