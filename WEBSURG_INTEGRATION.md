@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **160 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **176 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (160 Total - World-Class Surgical Library!)
+## 📊 Videos Added (176 Total - Elite Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -202,6 +202,25 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 159. **Endometrial Polypectomy: Advanced Hysteroscopic Technique** (21:00) - MC De Angelis
 160. **Retained Products of Conception: Office Removal with Grasper Scissors** (12:00) - MMF Hanstede
 
+### NEW VIDEOS - Hernia Repair (16 Additional Videos):
+
+161. **Totally Extraperitoneal Approach with Preperitoneal Hernia Repair (PeTEP)** (13:00) - J López-Monclús
+162. **Management of Inguinodynia** (22:00) - DC Chen
+163. **How to Prepare for Complicated Cases in Hernia Surgery** (29:00) - DC Chen
+164. **Optimizing Inguinal Hernia Repair** (36:00) - DC Chen
+165. **Focus on Abdominal Wall Hernia Repair (AWaR)** (12:00)
+166. **Resolution of W3 Incisional Hernias with Minimum Mesh Overlap** (07:00) - D Monteclári
+167. **eTEP RIVES Stoppa (eTEP RS) Technique for Large Incarcerated Primary Ventral Hernia** (10:00) - P Marrero Moreno
+168. **Low Spiegel Hernia: Laparoscopic Reconstruction** (05:00) - R Vargas Algarasas
+169. **Laparoscopic Resolution of Incarcerated Spigelian Hernia** (07:00) - D Monteclári
+170. **Tear of Posterior Sheath After Enhanced-View Totally Extraperitoneal (eTEP) Approach** (07:00) - D Monteclári
+171. **Laparoscopic Groin Hernia Repair: TAPP Procedure** (09:00) - H Maghrebi
+172. **Live Interactive Surgery: Laparoscopic Management of Bilateral Inguinal Hernia - TAPP** (11:00) - D Mutter
+173. **Live Interactive Surgery: Laparoscopic TEP Approach for Left Inguinal Hernia** (36:00) - B Dallemagne
+174. **Live Interactive Surgery: Laparoscopic Management of Ventral Hernia** (09:00) - M Ignat
+175. **Live Interactive Surgery: Laparoscopic TAPP Approach for Left Inguinal Hernia** (16:00) - D Mutter
+176. **Inguinal TAPP Repair for Strangulated Femoral Hernia with Enterectomy** (09:00) - J Marques Antunes
+
 ---
 
 ## 🎯 How It Works
@@ -334,8 +353,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 202 videos
-- WebSurg Professional: 160 videos (WORLD-CLASS LIBRARY - 144 new videos added!)
+**Total Videos**: 218 videos
+- WebSurg Professional: 176 videos (ELITE LIBRARY - 160 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
