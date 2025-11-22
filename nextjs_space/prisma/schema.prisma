@@ -1,70 +1,31 @@
 generator client {
-    provider = "prisma-client-js"
-    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
-    output = "/home/ubuntu/ssvnauka/nextjs_space/node_modules/.prisma/client"
+  provider      = "prisma-client-js"
+  output        = "/home/ubuntu/ssvnauka/nextjs_space/node_modules/.prisma/client"
+  binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
 }
 
 datasource db {
-    provider = "postgresql"
-    url      = env("DATABASE_URL")
-}
-
-enum UserRole {
-  STUDENT  // студент
-  SURGEON  // хирург
-  PATIENT  // пациент
-  ADMIN    // администратор
-}
-
-enum CourseLevel {
-  BASIC     // базовый (для студентов)
-  ADVANCED  // продвинутый (для начинающих хирургов)
-  EXPERT    // экспертный (для опытных хирургов)
-}
-
-enum OperationType {
-  GASTRECTOMY          // гастрэктомия
-  LIVER_RESECTION      // резекция печени
-  CHOLECYSTECTOMY      // холецистэктомия
-  COLECTOMY            // колэктомия
-  PANCREATIC_SURGERY   // операции на поджелудочной
-  HERNIA_REPAIR        // герниопластика
-  APPENDECTOMY         // аппендэктомия
-  ESOPHAGEAL_SURGERY   // операции на пищеводе
-  OTHER                // другое
-}
-
-enum SurgicalMethod {
-  LAPAROSCOPIC   // лапароскопический
-  ROBOTIC        // роботизированный
-  OPEN           // открытый
-  HYBRID         // гибридный
-}
-
-enum Difficulty {
-  BASIC     // базовая
-  MEDIUM    // средняя
-  HIGH      // высокая
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String    @unique
-  emailVerified DateTime?
-  password      String
-  role          UserRole  @default(STUDENT)
-  image         String?
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-
-  accounts         Account[]
-  sessions         Session[]
-  courseProgress   CourseProgress[]
-  videoProgress    VideoProgress[]
-  bookmarks        Bookmark[]
-  quizAttempts     QuizAttempt[]
-  certificates     Certificate[]
+  id             String           @id @default(cuid())
+  name           String?
+  email          String           @unique
+  emailVerified  DateTime?
+  password       String
+  role           String           @default("STUDENT")
+  image          String?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  accounts       Account[]
+  bookmarks      Bookmark[]
+  certificates   Certificate[]
+  courseProgress CourseProgress[]
+  quizAttempts   QuizAttempt[]
+  sessions       Session[]
+  videoProgress  VideoProgress[]
 }
 
 model Account {
@@ -73,15 +34,14 @@ model Account {
   type              String
   provider          String
   providerAccountId String
-  refresh_token     String? @db.Text
-  access_token      String? @db.Text
+  refresh_token     String?
+  access_token      String?
   expires_at        Int?
   token_type        String?
   scope             String?
-  id_token          String? @db.Text
+  id_token          String?
   session_state     String?
-
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([provider, providerAccountId])
 }
@@ -103,183 +63,167 @@ model VerificationToken {
 }
 
 model Course {
-  id            String      @id @default(cuid())
+  id            String           @id @default(cuid())
   title         String
-  description   String      @db.Text
-  level         CourseLevel
+  description   String
+  level         String
   durationHours Int
   imageUrl      String?
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
-
-  progress      CourseProgress[]
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
   bookmarks     Bookmark[]
-  quizzes       Quiz[]
   certificates  Certificate[]
+  progress      CourseProgress[]
+  quizzes       Quiz[]
 }
 
 model Video {
   id              String          @id @default(cuid())
   title           String
-  description     String          @db.Text
-  operationType   OperationType
-  method          SurgicalMethod
-  difficulty      Difficulty
+  description     String
+  operationType   String
+  method          String
+  difficulty      String
   author          String
   clinic          String
   durationMinutes Int
   thumbnailUrl    String?
   createdAt       DateTime        @default(now())
   updatedAt       DateTime        @updatedAt
-
-  progress        VideoProgress[]
   bookmarks       Bookmark[]
+  progress        VideoProgress[]
 }
 
 model Article {
   id          String   @id @default(cuid())
   title       String
-  content     String   @db.Text
+  content     String
   category    String
-  excerpt     String   @db.Text
+  excerpt     String
   publishedAt DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
 
 model FAQ {
   id        String   @id @default(cuid())
-  question  String   @db.Text
-  answer    String   @db.Text
+  question  String
+  answer    String
   category  String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
 model GlossaryTerm {
-  id          String   @id @default(cuid())
-  term        String
-  definition  String   @db.Text
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id         String   @id @default(cuid())
+  term       String
+  definition String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
 
-// Прогресс по курсам
 model CourseProgress {
-  id          String   @id @default(cuid())
+  id          String    @id @default(cuid())
   userId      String
   courseId    String
-  completed   Boolean  @default(false)
+  completed   Boolean   @default(false)
   completedAt DateTime?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  course      Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  course      Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, courseId])
   @@index([userId])
   @@index([courseId])
 }
 
-// Прогресс по видео
 model VideoProgress {
-  id          String   @id @default(cuid())
-  userId      String
-  videoId     String
-  watched     Boolean  @default(false)
-  watchedAt   DateTime?
-  lastPosition Int     @default(0) // Позиция просмотра в секундах
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  video       Video    @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  id           String    @id @default(cuid())
+  userId       String
+  videoId      String
+  watched      Boolean   @default(false)
+  watchedAt    DateTime?
+  lastPosition Int       @default(0)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  video        Video     @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, videoId])
   @@index([userId])
   @@index([videoId])
 }
 
-// Закладки
 model Bookmark {
-  id          String   @id @default(cuid())
-  userId      String
-  courseId    String?
-  videoId     String?
-  createdAt   DateTime @default(now())
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  course      Course?  @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  video       Video?   @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  id        String   @id @default(cuid())
+  userId    String
+  courseId  String?
+  videoId   String?
+  createdAt DateTime @default(now())
+  video     Video?   @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  course    Course?  @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([courseId])
   @@index([videoId])
 }
 
-// Тесты для курсов
 model Quiz {
-  id          String   @id @default(cuid())
-  courseId    String
-  title       String
-  description String?  @db.Text
-  passingScore Int     @default(70) // Проходной балл в процентах
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  course      Course         @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  questions   QuizQuestion[]
-  attempts    QuizAttempt[]
+  id           String         @id @default(cuid())
+  courseId     String
+  title        String
+  description  String?
+  passingScore Int            @default(70)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  course       Course         @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  attempts     QuizAttempt[]
+  questions    QuizQuestion[]
 
   @@index([courseId])
 }
 
-// Вопросы для тестов
 model QuizQuestion {
-  id          String   @id @default(cuid())
-  quizId      String
-  question    String   @db.Text
-  options     String[] // Массив вариантов ответа
-  correctAnswer Int    // Индекс правильного ответа
-  explanation String?  @db.Text
-  order       Int      @default(0)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-
-  quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  id            String   @id @default(cuid())
+  quizId        String
+  question      String
+  options       String
+  correctAnswer Int
+  explanation   String?
+  order         Int      @default(0)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  quiz          Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
 
   @@index([quizId])
 }
 
-// Попытки прохождения тестов
 model QuizAttempt {
   id          String   @id @default(cuid())
   userId      String
   quizId      String
-  answers     Int[]    // Массив ответов пользователя
-  score       Int      // Балл в процентах
+  answers     String
+  score       Int
   passed      Boolean  @default(false)
   completedAt DateTime @default(now())
   createdAt   DateTime @default(now())
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([quizId])
 }
 
-// Сертификаты
 model Certificate {
-  id          String   @id @default(cuid())
-  userId      String
-  courseId    String
-  certificateNumber String @unique
-  issuedAt    DateTime @default(now())
-  createdAt   DateTime @default(now())
-
-  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  course      Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  id                String   @id @default(cuid())
+  userId            String
+  courseId          String
+  certificateNumber String   @unique
+  issuedAt          DateTime @default(now())
+  createdAt         DateTime @default(now())
+  course            Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, courseId])
   @@index([userId])

@@ -38,7 +38,16 @@ export async function GET(
       return NextResponse.json({ error: 'Quiz not found' }, { status: 404 });
     }
 
-    return NextResponse.json(quiz);
+    // Парсим JSON строки в массивы для клиента
+    const quizWithParsedOptions = {
+      ...quiz,
+      questions: quiz.questions.map(q => ({
+        ...q,
+        options: JSON.parse(q.options)
+      }))
+    };
+
+    return NextResponse.json(quizWithParsedOptions);
   } catch (error) {
     console.error('Error fetching quiz:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });

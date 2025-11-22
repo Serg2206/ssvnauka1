@@ -7,8 +7,6 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('🌱 Начало наполнения базы данных...');
 
-  // Очистка существующих данных
-  await prisma.glossaryTerm.deleteMany();
   await prisma.fAQ.deleteMany();
   await prisma.article.deleteMany();
   await prisma.video.deleteMany();
@@ -3022,7 +3020,10 @@ function generateQuizQuestions(courseTitle: string) {
     }
   ];
 
-  return baseQuestions;
+  return baseQuestions.map(q => ({
+    ...q,
+    options: JSON.stringify(q.options)
+  }));
 }
 
 main()

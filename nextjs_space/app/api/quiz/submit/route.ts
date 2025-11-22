@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
       data: {
         userId: user.id,
         quizId,
-        answers,
+        answers: JSON.stringify(answers),
         score,
         passed,
       },
