@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **145 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **160 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (145 Total - Premier Surgical Library!)
+## 📊 Videos Added (160 Total - World-Class Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -184,6 +184,24 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 144. **VATS Lobectomy: Step-by-Step Technique** (35:00)
 145. **Robotic-Assisted Thymectomy for Myasthenia Gravis** (28:00)
 
+### NEW VIDEOS - Gynecologic Surgery (15 Additional Videos):
+
+146. **The Adenomyoma: Video Techniques, Advantages and Limitations of Different Treatments** (27:00) - N Katsalyn
+147. **The Submucous Myoma: Video Techniques, Advantages and Limitations of Different Treatments** (24:00) - L Gobetz
+148. **Hysteroscopy for Management of Ectopic Pregnancy: Cesarean Scar, Cervical and Cornual** (22:00) - N Sinorejek
+149. **Definition: What is Complex Surgery? Dealing with Complications of Advanced Surgery** (29:00) - M Connor
+150. **The Big Polyp/Fibrotic/Sessile Polyp: Video Techniques and Intra-Ostium Polyp** (34:00) - P Tsiok
+151. **Isthmocele: Definition, Diagnosis and Video Techniques** (16:00) - P Cassado
+152. **Evidence Update on Intrauterine Adhesions** (26:00) - H Fernandez, M Jegueden
+153. **Surgical Considerations for the Obese Patient in Gynecologic Surgery** (29:00) - RP Pejic
+154. **Strategies to Prevent Vaginal Cuff Dehiscence After Total Laparoscopic Hysterectomy** (20:00) - B Rodriguez
+155. **Minimally Invasive Surgery in Cervical Cancer: From Laparoscopic to Cervical Approach** (17:00) - D Querleu
+156. **Sentinel Lymph Node Mapping in Endometrial Cancer** (21:00) - N Abu-Rustum
+157. **Navigating Early Pregnancy Loss: Surgical Approaches to Missed Miscarriages** (17:00) - CE Miller
+158. **How to Deal with Cystic Adenomyosis in the Infertile Patient** (15:00) - E Gillet, R Campo
+159. **Endometrial Polypectomy: Advanced Hysteroscopic Technique** (21:00) - MC De Angelis
+160. **Retained Products of Conception: Office Removal with Grasper Scissors** (12:00) - MMF Hanstede
+
 ---
 
 ## 🎯 How It Works
@@ -316,8 +334,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 187 videos
-- WebSurg Professional: 145 videos (PREMIER LIBRARY - 129 new videos added!)
+**Total Videos**: 202 videos
+- WebSurg Professional: 160 videos (WORLD-CLASS LIBRARY - 144 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
