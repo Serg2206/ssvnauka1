@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **131 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **145 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (131 Total - World-Class Surgical Library!)
+## 📊 Videos Added (145 Total - Premier Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -167,6 +167,23 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 130. **Robotic Pancreaticoduodenectomy (Whipple): Step-by-Step Technique** (28:00)
 131. **Robotic Gastrectomy with D2 Lymphadenectomy for Gastric Cancer** (21:00)
 
+### NEW VIDEOS - Thoracic Surgery (14 Additional Videos):
+
+132. **Video-Assisted Thoracoscopy for Management of Right Mediastinal Bronchogenic Cyst** (08:00) - D Forgues
+133. **3D Reconstruction in Thoracic Surgery: Benefits and Applications** (07:00) - A Seguin-Givelet
+134. **Multiport Anterior Thoracoscopic Approach** (11:00) - R Petersen
+135. **Thymectomy: Subxiphoid Thoracoscopic Approach** (12:00) - K Pfeuty
+136. **Sublobar Resections for Early-Stage Lung Carcinomas: An Update** (45:00) - D Gossot
+137. **Enhanced Recovery After Surgery (ERAS) for Video-Assisted Thoracoscopic Surgery** (14:00) - T Batchelor
+138. **Removal of Intrathoracic Foreign Body After Penetrating Injury Using VATS** (05:00) - M Dali Simone
+139. **Bilateral Thoracoscopic Approach in Child with Posterior Mediastinal Neuroblastoma** (05:00) - D Abdaladze
+140. **Thoracoscopic Management of Postoperative Chylothorax** (05:00) - D Forgues
+141. **Endoscopic Thoracic Sympathectomy (ETS) for Primary Palmar Hyperhidrosis** (14:00) - M Abdaladze
+142. **Laparoscopic and Thoracoscopic Ivor-Lewis Esophagectomy with Linear Anastomosis** (15:00) - JG Vargas Montero
+143. **Laparoscopic Repair of Post-Traumatic Diaphragmatic Rupture** (04:00) - Y Chaker
+144. **VATS Lobectomy: Step-by-Step Technique** (35:00)
+145. **Robotic-Assisted Thymectomy for Myasthenia Gravis** (28:00)
+
 ---
 
 ## 🎯 How It Works
@@ -299,8 +316,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 173 videos
-- WebSurg Professional: 131 videos (WORLD-CLASS LIBRARY - 115 new videos added!)
+**Total Videos**: 187 videos
+- WebSurg Professional: 145 videos (PREMIER LIBRARY - 129 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
