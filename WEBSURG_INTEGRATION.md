@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **36 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **51 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (36 Total - Expanded Library!)
+## 📊 Videos Added (51 Total - Greatly Expanded Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -53,6 +53,24 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 34. **Peroral Endoscopic Myotomy (POEM) for Achalasia** (25:00)
 35. **Laparoscopic Paraesophageal Hernia Repair** (17:00)
 36. **Endoscopic Submucosal Dissection for Early Gastric Cancer** (24:00)
+
+### NEW VIDEOS - Endoscopic Surgery Expansion (15 Additional Videos):
+
+37. **Video-Endoscopic Inguinal Lymphadenectomy for Merkel Cell Carcinoma** (20:00) - CS Rodrigues
+38. **Linear-Stapled Esophagojejunostomy in Laparoscopic Total Gastrectomy** (10:00) - D Venâncio Dionísio
+39. **Perianal Extended Endoscopic Submucosal Dissection** (13:00)
+40. **Endoscopic Repermeabilization of Common Bile Duct Transection** (15:00)
+41. **Laparoscopic Hepaticojejunostomy for Strasberg E3 Bile Duct Injury** (13:00) - J Barisian-Hernandez
+42. **Endoscopic Thoracic Sympathectomy for Primary Palmar Hyperhidrosis** (14:00) - M Abdelbaky
+43. **Endoscopic Surgical Anatomy of the Abdominal Wall** (13:00) - V Badu
+44. **Endoscopic Totally Extraperitoneal Inguinal Hernia Repair (TEP)** (06:00) - J García-Quijada García
+45. **Combined Robotic Endoscopic Surgery (CRES) for Tubulovillous Adenoma** (12:00) - A Jaramillo
+46. **Posterior Endoscopic Groin Anatomy** (13:00) - M Busse
+47. **Transvaginal Natural Orifice Transluminal Endoscopic Surgery (vNOTES)** (14:00) - S Naval
+48. **ERCP for Common Bile Duct Stone Extraction** (09:00) - GF Donatelli
+49. **Endoscopic Submucosal Dissection (ESD) of the Rectum** (43:00)
+50. **Endoscopic Management of Esophageal Variceal Bleeding** (18:00)
+51. **Endoscopic Full-Thickness Resection (EFTR) Technique** (16:00)
 
 ---
 
@@ -186,8 +204,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 78 videos
-- WebSurg Professional: 36 videos (EXPANDED - 20 new videos added!)
+**Total Videos**: 93 videos
+- WebSurg Professional: 51 videos (GREATLY EXPANDED - 35 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
