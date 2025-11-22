@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **69 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **85 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (69 Total - Comprehensive Surgical Library!)
+## 📊 Videos Added (85 Total - Complete Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -92,6 +92,25 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 67. **Laparoscopic Sigmoid Colectomy for Diverticular Disease** (12:00)
 68. **Robotic Low Anterior Resection with Total Mesorectal Excision** (22:00)
 69. **Laparoscopic Hartmann Reversal with Colorectal Anastomosis** (15:00)
+
+### NEW VIDEOS - General & Digestive Surgery (16 Additional Videos):
+
+70. **Post-Esophagectomy Hiatal Hernia Laparoscopic Repair** (08:00) - I Bertão Colaço
+71. **Surgical Management of Perforated Diverticulitis** (13:00) - B Núvez
+72. **Organoaxial Gastric Volvulus Due to Morgagni Hernia Laparoscopic Repair** (09:00) - I Bertão Colaço
+73. **Laparoscopy for Perforated Peptic Ulcer (PPU)** (30:00) - B Núvez
+74. **Laparoscopy and Appendicitis: Comprehensive Surgical Approach** (52:00) - B Núvez
+75. **Laparoscopic Treatment of Early Small Bowel Obstruction Recurrence** (09:00) - A Lapergola
+76. **Laparoscopic Repair of Acute Organoaxial Gastric Volvulus** (09:00) - JP Couto
+77. **Laparoscopic Management of Perforated Duodenal Ulcer** (10:00) - E Beitano
+78. **Laparoscopic Subtotal Antegrade Cholecystectomy for Emphysematous Cholecystitis** (09:00)
+79. **Laparoscopic Treatment of Gastrogastric Fistula After Roux-en-Y Gastric Bypass** (11:00) - F Alexandre
+80. **Laparoscopic Repair of Blunt Traumatic Duodenojejunal Flexure Laceration** (08:00) - A Lapergola
+81. **Robotic Single Port Toupet Fundoplication with Da Vinci SP System** (09:00) - L Balliu
+82. **Laparoscopic Splenectomy for Splenic Tumor** (15:00)
+83. **Laparoscopic Adrenalectomy for Adrenal Mass** (12:00)
+84. **Laparoscopic Ventral Hernia Repair with Mesh** (14:00)
+85. **Laparoscopic Gastrojejunostomy for Gastric Outlet Obstruction** (11:00)
 
 ---
 
@@ -225,8 +244,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 111 videos
-- WebSurg Professional: 69 videos (COMPREHENSIVE LIBRARY - 53 new videos added!)
+**Total Videos**: 127 videos
+- WebSurg Professional: 85 videos (COMPLETE LIBRARY - 69 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
