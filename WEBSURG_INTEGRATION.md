@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **85 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **101 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (85 Total - Complete Surgical Library!)
+## 📊 Videos Added (101 Total - Comprehensive Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -111,6 +111,25 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 83. **Laparoscopic Adrenalectomy for Adrenal Mass** (12:00)
 84. **Laparoscopic Ventral Hernia Repair with Mesh** (14:00)
 85. **Laparoscopic Gastrojejunostomy for Gastric Outlet Obstruction** (11:00)
+
+### NEW VIDEOS - Hepatobiliary & Pancreatic Surgery (16 Additional Videos):
+
+86. **Laparoscopic Marginal Resection of IVC with Autologous Vein Patch** (19:00) - P Agami
+87. **Learning Liver Anatomy with Ultrasound Guidance: Key Landmarks** (05:00) - C Innocenzi
+88. **Endoscopic Ultrasound-Guided Biliary Drainage with Bridging Technique** (13:00) - D Galasso
+89. **Biliary Strictures Post-Cholecystectomy and Hepaticojejunostomy Complications** (30:00) - ME Giménez
+90. **Endoscopic Repermeabilization of CBD Transection After Laparoscopic Cholecystectomy** (08:00) - D Galasso
+91. **Laparoscopic Pancreatic Ultrasound: Basic Instructionals** (09:00) - ME Giménez
+92. **Intrabiliary Radiofrequency Ablation (RFA) for Residual Adenoma** (12:00) - M Giovannini
+93. **Laparoscopic Hepaticojejunostomy for Strasberg E3 Bile Duct Injury** (13:00) - J Barristan-Hernandez
+94. **Laparoscopic Hepatic Right Anterior Sectionectomy in 14-Year-Old Child** (09:00) - D Abduladze
+95. **Laparoscopic Roux-en-Y Cystojejunostomy for Congenital Hepatic Cyst** (08:00) - I Braga
+96. **Laparoscopic Extraction of Ascaris Lumbricoides from Biliary Tract** (06:00) - JP Murillo Ortiz
+97. **EUS-Guided Radiofrequency Ablation of Pancreatic Neuroendocrine Tumor** (09:00) - M Giovannini
+98. **Liver Tumor Ablation: Comprehensive Techniques and Indications** (43:00) - ME Giménez
+99. **Robotic Pancreaticoduodenectomy (Whipple) for Pancreatic Head Tumor** (25:00)
+100. **Laparoscopic Distal Pancreatectomy with Spleen Preservation** (18:00)
+101. **Laparoscopic Left Hepatectomy for Liver Metastases** (21:00)
 
 ---
 
@@ -244,8 +263,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 127 videos
-- WebSurg Professional: 85 videos (COMPLETE LIBRARY - 69 new videos added!)
+**Total Videos**: 143 videos
+- WebSurg Professional: 101 videos (COMPREHENSIVE LIBRARY - 85 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
