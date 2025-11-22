@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **176 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **191 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (176 Total - Elite Surgical Library!)
+## 📊 Videos Added (191 Total - World-Class Urological Excellence!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -221,6 +221,24 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 175. **Live Interactive Surgery: Laparoscopic TAPP Approach for Left Inguinal Hernia** (16:00) - D Mutter
 176. **Inguinal TAPP Repair for Strangulated Femoral Hernia with Enterectomy** (09:00) - J Marques Antunes
 
+### NEW VIDEOS - Urologic Surgery (15 Additional Videos):
+
+177. **Laparoscopic Retroperitoneal Lymph Node Dissection with Patient in Supine Position** (20:00) - L Romeo
+178. **Technical Principles of Robotic Urinary Diversion After Cystectomy** (32:00) - F Annino
+179. **Robotic Radical Prostatectomy in Post-Brachytherapy Using New Single Surgical Platform** (18:00) - L Ortigara
+180. **Role of Single Port Robotic Surgery in Urology** (25:00) - S Crivellaro
+181. **Laparoscopic Boari Flap and Psoas Hitch for Left Mid-Ureter Injury** (17:00) - C Araujo Britto
+182. **Robotic Assisted Radical Cystectomy (RARC)** (27:00) - RF Coelho
+183. **Laparoscopic Right Nephroureterectomy with Bladder Cuff Excision** (17:00) - C Araujo Britto
+184. **Robotic Radical Prostatectomy After Simple Prostatectomy with Millin Technique** (14:00) - L Ortigara
+185. **Laparoscopic Bladder Neck Reconstruction Using Buccal Mucosal Graft** (06:00) - L Romeo
+186. **Management of IVC Thrombus During Minimally Invasive Radical Nephrectomy** (10:00) - RF Coelho
+187. **Robotic Left Adrenalectomy in Patient with Adrenocortical Carcinoma** (14:00) - V Codagnone Neto
+188. **Laparoscopic Ureterolysis with Omental Wrap for Idiopathic Retroperitoneal Fibrosis** (15:00) - C Araujo Britto
+189. **Robotic Assisted Radical Prostatocystectomy in Patient with Large Prostate** (27:00) - V Codagnone Neto
+190. **Laparoscopic Right Radical Nephrectomy for Renal Cell Carcinoma** (12:00) - A Charnoz
+191. **Ultrapreservation in Robotic Radical Prostatectomy: Anterior, Antegrade Approaches** (32:00) - T Piechaud
+
 ---
 
 ## 🎯 How It Works
@@ -353,8 +371,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 218 videos
-- WebSurg Professional: 176 videos (ELITE LIBRARY - 160 new videos added!)
+**Total Videos**: 233 videos
+- WebSurg Professional: 191 videos (WORLD-CLASS LIBRARY - 175 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
