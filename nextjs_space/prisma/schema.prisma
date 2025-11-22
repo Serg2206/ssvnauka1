@@ -81,6 +81,7 @@ model Video {
   id              String          @id @default(cuid())
   title           String
   description     String
+  videoUrl        String
   operationType   String
   method          String
   difficulty      String

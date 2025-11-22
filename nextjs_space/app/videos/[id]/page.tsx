@@ -35,20 +35,33 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
         </Link>
 
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div className="relative aspect-video bg-gradient-to-br from-slate-100 to-slate-200">
-            {video.thumbnailUrl && (
-              <Image
-                src={video.thumbnailUrl}
-                alt={video.title}
-                fill
-                className="object-cover"
+          {/* Video Player */}
+          <div className="relative aspect-video bg-black">
+            {video.videoUrl ? (
+              <iframe
+                src={video.videoUrl}
+                title={video.title}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
+            ) : (
+              <>
+                {video.thumbnailUrl && (
+                  <Image
+                    src={video.thumbnailUrl}
+                    alt={video.title}
+                    fill
+                    className="object-cover"
+                  />
+                )}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
+                    <VideoIcon className="text-blue-600" size={40} />
+                  </div>
+                </div>
+              </>
             )}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                <VideoIcon className="text-blue-600" size={40} />
-              </div>
-            </div>
           </div>
 
           <div className="p-8">

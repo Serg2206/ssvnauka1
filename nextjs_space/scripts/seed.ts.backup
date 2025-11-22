@@ -175,7 +175,6 @@ async function main() {
     {
       title: 'Лапароскопическая холецистэктомия: стандартная техника',
       description: 'Детальная демонстрация этапов стандартной лапароскопической холецистэктомии. Установка портов, выделение треугольника Кало, клипирование и пересечение пузырного протока и артерии, удаление желчного пузыря. Продолжительность операции 45 минут.',
-      videoUrl: 'https://player.vimeo.com/video/76979871',
       operationType: "CHOLECYSTECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "BASIC",
@@ -187,7 +186,6 @@ async function main() {
     {
       title: 'Лапароскопическая холецистэктомия при остром холецистите',
       description: 'Техника лапароскопической холецистэктомии у пациента с острым флегмонозным холециститом. Особенности выделения в условиях воспаления, методы безопасной диссекции, профилактика осложнений.',
-      videoUrl: 'https://player.vimeo.com/video/148751763',
       operationType: "CHOLECYSTECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "MEDIUM",
@@ -199,7 +197,6 @@ async function main() {
     {
       title: 'Лапароскопическая аппендэктомия',
       description: 'Стандартная техника лапароскопической аппендэктомии при остром аппендиците. Диагностическая лапароскопия, мобилизация червеобразного отростка, обработка брыжейки и основания, удаление в контейнере.',
-      videoUrl: 'https://player.vimeo.com/video/90509568',
       operationType: "APPENDECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "BASIC",
@@ -211,7 +208,6 @@ async function main() {
     {
       title: 'Лапароскопическая правосторонняя гемиколэктомия',
       description: 'Онкологически адекватная правосторонняя гемиколэктомия лапароскопическим доступом. Мобилизация правых отделов ободочной кишки, лигирование сосудов у основания, удаление препарата, интракорпоральный анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/90682589',
       operationType: "COLECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "HIGH",
@@ -223,7 +219,6 @@ async function main() {
     {
       title: 'Лапароскопическая передняя резекция прямой кишки с TME',
       description: 'Техника передней резекции прямой кишки при раке с тотальной мезоректумэктомией. Мобилизация по эмбриональным слоям, сохранение автономных нервов, техника TME, колоректальный анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/179028914',
       operationType: "COLECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "HIGH",
@@ -235,7 +230,6 @@ async function main() {
     {
       title: 'Лапароскопическая пластика паховой грыжи (TAPP)',
       description: 'Трансабдоминальная преперитонеальная пластика паховой грыжи с использованием сетчатого импланта. Особенности визуализации грыжевых ворот, установка и фиксация сетки, закрытие брюшины.',
-      videoUrl: 'https://player.vimeo.com/video/242789884',
       operationType: "HERNIA_REPAIR",
       method: "LAPAROSCOPIC",
       difficulty: "MEDIUM",
@@ -247,7 +241,6 @@ async function main() {
     {
       title: 'Лапароскопическая фундопликация по Ниссену',
       description: 'Антирефлюксная операция при грыже пищеводного отверстия диафрагмы и ГЭРБ. Мобилизация дна желудка, закрытие ножек диафрагмы, формирование 360° манжеты вокруг пищевода.',
-      videoUrl: 'https://player.vimeo.com/video/336812660',
       operationType: "ESOPHAGEAL_SURGERY",
       method: "LAPAROSCOPIC",
       difficulty: "HIGH",
@@ -259,7 +252,6 @@ async function main() {
     {
       title: 'Лапароскопическая резекция сигмовидной кишки',
       description: 'Резекция сигмовидной кишки при дивертикулярной болезни лапароскопическим доступом. Мобилизация левых отделов, перевязка нижней брыжеечной артерии, колоректальный анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/178093578',
       operationType: "COLECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "MEDIUM",
@@ -271,7 +263,6 @@ async function main() {
     {
       title: 'Лапароскопическая дистальная резекция желудка',
       description: 'Дистальная субтотальная резекция желудка с D2 лимфодиссекцией при раке. Лапароскопическая техника, мобилизация желудка, формирование гастроеюноанастомоза по Ру.',
-      videoUrl: 'https://player.vimeo.com/video/19231868',
       operationType: "GASTRECTOMY",
       method: "LAPAROSCOPIC",
       difficulty: "HIGH",
@@ -283,7 +274,6 @@ async function main() {
     {
       title: 'Лапароскопическая спленэктомия',
       description: 'Лапароскопическое удаление селезенки при идиопатической тромбоцитопенической пурпуре. Мобилизация селезенки, контроль сосудистой ножки, морцелляция и удаление через порт.',
-      videoUrl: 'https://player.vimeo.com/video/290512680',
       operationType: "OTHER",
       method: "LAPAROSCOPIC",
       difficulty: "MEDIUM",
@@ -296,7 +286,6 @@ async function main() {
     {
       title: 'Роботизированная гастрэктомия с D2 лимфодиссекцией',
       description: 'Тотальная гастрэктомия с расширенной лимфодиссекцией D2 с использованием системы Da Vinci. Преимущества роботизированного доступа в диссекции лимфоузлов, формирование пищеводно-кишечного анастомоза.',
-      videoUrl: 'https://player.vimeo.com/video/76979871',
       operationType: "GASTRECTOMY",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -308,7 +297,6 @@ async function main() {
     {
       title: 'Роботизированная низкая передняя резекция прямой кишки',
       description: 'Передняя резекция прямой кишки с TME роботической системой Da Vinci Xi. Точная диссекция в узком тазу, сохранение нервов, интракорпоральный анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/148751763',
       operationType: "COLECTOMY",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -320,7 +308,6 @@ async function main() {
     {
       title: 'Роботизированная правосторонняя гепатэктомия',
       description: 'Анатомическая резекция правой доли печени роботизированным доступом. Контроль сосудистых структур, паренхиматозная диссекция, гемостаз. Возможности роботизированной хирургии печени.',
-      videoUrl: 'https://player.vimeo.com/video/90509568',
       operationType: "LIVER_RESECTION",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -332,7 +319,6 @@ async function main() {
     {
       title: 'Роботизированная панкреатодуоденальная резекция',
       description: 'Операция Уиппла с использованием Da Vinci. Роботизированная техника сложнейшей операции: резекция головки поджелудочной железы с двенадцатиперстной кишкой, реконструкция с тремя анастомозами.',
-      videoUrl: 'https://player.vimeo.com/video/90682589',
       operationType: "PANCREATIC_SURGERY",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -344,7 +330,6 @@ async function main() {
     {
       title: 'Роботизированная эзофагэктомия по Льюису',
       description: 'Субтотальная резекция пищевода роботизированным доступом. Абдоминальный и торакальный этапы, мобилизация желудочной трубки, внутригрудной анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/179028914',
       operationType: "ESOPHAGEAL_SURGERY",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -356,7 +341,6 @@ async function main() {
     {
       title: 'Роботизированная дистальная резекция поджелудочной железы',
       description: 'Резекция хвоста поджелудочной железы с сохранением селезенки роботизированным доступом. Прецизионная диссекция, сохранение селезеночных сосудов, обработка панкреатического среза.',
-      videoUrl: 'https://player.vimeo.com/video/242789884',
       operationType: "PANCREATIC_SURGERY",
       method: "ROBOTIC",
       difficulty: "HIGH",
@@ -368,7 +352,6 @@ async function main() {
     {
       title: 'Роботизированная пластика паховой грыжи (rTAPP)',
       description: 'Трансабдоминальная роботизированная герниопластика с установкой сетки. Преимущества роботических манипуляторов в интракорпоральном шве и точной позиционировании импланта.',
-      videoUrl: 'https://player.vimeo.com/video/336812660',
       operationType: "HERNIA_REPAIR",
       method: "ROBOTIC",
       difficulty: "MEDIUM",
@@ -380,7 +363,6 @@ async function main() {
     {
       title: 'Роботизированная резекция желудка при GIST',
       description: 'Клиновидная резекция желудка при гастроинтестинальной стромальной опухоли. Роботизированная техника позволяет точно резецировать опухоль с сохранением функции желудка.',
-      videoUrl: 'https://player.vimeo.com/video/178093578',
       operationType: "GASTRECTOMY",
       method: "ROBOTIC",
       difficulty: "MEDIUM",
@@ -393,7 +375,6 @@ async function main() {
     {
       title: 'Открытая гастрэктомия с D2 лимфодиссекцией',
       description: 'Классическая тотальная гастрэктомия открытым доступом при раке желудка. Верхнесрединная лапаротомия, мобилизация желудка, расширенная лимфодиссекция D2, реконструкция по Ру.',
-      videoUrl: 'https://player.vimeo.com/video/19231868',
       operationType: "GASTRECTOMY",
       method: "OPEN",
       difficulty: "HIGH",
@@ -405,7 +386,6 @@ async function main() {
     {
       title: 'Открытая правосторонняя гепатэктомия',
       description: 'Анатомическая резекция правой доли печени открытым доступом. Мобилизация печени, контроль сосудистых структур ворот, паренхиматозная диссекция ультразвуковым скальпелем.',
-      videoUrl: 'https://player.vimeo.com/video/290512680',
       operationType: "LIVER_RESECTION",
       method: "OPEN",
       difficulty: "HIGH",
@@ -417,7 +397,6 @@ async function main() {
     {
       title: 'Открытая панкреатодуоденальная резекция (операция Уиппла)',
       description: 'Классическая операция Уиппла открытым доступом при раке головки поджелудочной железы. Детальная демонстрация резекционного и реконструктивного этапов с тремя анастомозами.',
-      videoUrl: 'https://player.vimeo.com/video/76979871',
       operationType: "PANCREATIC_SURGERY",
       method: "OPEN",
       difficulty: "HIGH",
@@ -429,7 +408,6 @@ async function main() {
     {
       title: 'Открытая холецистэктомия при осложненном холецистите',
       description: 'Холецистэктомия из минилапаротомного доступа при деструктивном холецистите. Показания к открытому доступу, техника выделения в инфильтрате, наружное дренирование.',
-      videoUrl: 'https://player.vimeo.com/video/148751763',
       operationType: "CHOLECYSTECTOMY",
       method: "OPEN",
       difficulty: "MEDIUM",
@@ -441,7 +419,6 @@ async function main() {
     {
       title: 'Открытая брюшно-промежностная экстирпация прямой кишки',
       description: 'Экстирпация прямой кишки при низком раке прямой кишки. Абдоминальный и промежностный этапы, формирование концевой колостомы. Техника тазовой диссекции.',
-      videoUrl: 'https://player.vimeo.com/video/90509568',
       operationType: "COLECTOMY",
       method: "OPEN",
       difficulty: "HIGH",
@@ -453,7 +430,6 @@ async function main() {
     {
       title: 'Открытая пластика гигантской вентральной грыжи',
       description: 'Герниопластика гигантской послеоперационной вентральной грыжи с установкой сетчатого импланта. Техника разделения компонентов брюшной стенки, профилактика рецидива.',
-      videoUrl: 'https://player.vimeo.com/video/90682589',
       operationType: "HERNIA_REPAIR",
       method: "OPEN",
       difficulty: "HIGH",
@@ -465,7 +441,6 @@ async function main() {
     {
       title: 'Открытая аппендэктомия при аппендикулярном инфильтрате',
       description: 'Аппендэктомия из доступа Волковича-Дьяконова при осложненном аппендиците. Разделение инфильтрата, аппендэктомия, дренирование брюшной полости.',
-      videoUrl: 'https://player.vimeo.com/video/179028914',
       operationType: "APPENDECTOMY",
       method: "OPEN",
       difficulty: "MEDIUM",
@@ -477,7 +452,6 @@ async function main() {
     {
       title: 'Открытая эзофагэктомия по Льюису',
       description: 'Субтотальная резекция пищевода открытым комбинированным доступом. Абдоминальный этап - мобилизация желудка, торакотомия - резекция пищевода, формирование внутригрудного анастомоза.',
-      videoUrl: 'https://player.vimeo.com/video/242789884',
       operationType: "ESOPHAGEAL_SURGERY",
       method: "OPEN",
       difficulty: "HIGH",
@@ -490,7 +464,6 @@ async function main() {
     {
       title: 'Гибридная резекция печени: лапароскопия + минидоступ',
       description: 'Резекция 6-7 сегментов печени гибридной техникой. Лапароскопическая мобилизация, контроль сосудов, затем минилапаротомия для безопасной паренхиматозной диссекции.',
-      videoUrl: 'https://player.vimeo.com/video/336812660',
       operationType: "LIVER_RESECTION",
       method: "HYBRID",
       difficulty: "HIGH",
@@ -502,7 +475,6 @@ async function main() {
     {
       title: 'Гибридная гастрэктомия: лапароскопия-ассистированная',
       description: 'Лапароскопия-ассистированная гастрэктомия. Лапароскопический этап мобилизации и лимфодиссекции, экстракция через минилапаротомию, формирование анастомозов открытым способом.',
-      videoUrl: 'https://player.vimeo.com/video/178093578',
       operationType: "GASTRECTOMY",
       method: "HYBRID",
       difficulty: "HIGH",
@@ -514,7 +486,6 @@ async function main() {
     {
       title: 'Гибридная колэктомия при раке селезеночного угла',
       description: 'Резекция селезеночного угла ободочной кишки гибридной техникой. Лапароскопическая мобилизация, контроль сосудов, экстракция через малый разрез, внекорпоральный анастомоз.',
-      videoUrl: 'https://player.vimeo.com/video/19231868',
       operationType: "COLECTOMY",
       method: "HYBRID",
       difficulty: "MEDIUM",
@@ -526,7 +497,6 @@ async function main() {
     {
       title: 'Гибридная операция при осложненном раке желудка',
       description: 'Гастрэктомия при осложненном стенозирующем раке желудка. Диагностическая лапароскопия, конверсия в лапаротомию, резекция с наложением питательной еюностомы.',
-      videoUrl: 'https://player.vimeo.com/video/290512680',
       operationType: "GASTRECTOMY",
       method: "HYBRID",
       difficulty: "HIGH",
