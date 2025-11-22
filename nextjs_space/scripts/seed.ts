@@ -16,9 +16,20 @@ async function main() {
   await prisma.user.deleteMany();
 
   // Создание тестовых пользователей
+  const testPassword = await bcrypt.hash('test123456', 10);
   const adminPassword = await bcrypt.hash('admin123', 10);
   const surgeonPassword = await bcrypt.hash('surgeon123', 10);
   const studentPassword = await bcrypt.hash('student123', 10);
+
+  // Тестовый пользователь для автоматических тестов
+  await prisma.user.create({
+    data: {
+      email: 'test@ssvnauka.com',
+      password: testPassword,
+      name: 'Test User',
+      role: "STUDENT",
+    },
+  });
 
   await prisma.user.create({
     data: {
@@ -171,7 +182,201 @@ async function main() {
 
   // Создание видео (30 видео)
   const videos = [
-    // ЛАПАРОСКОПИЧЕСКИЕ ОПЕРАЦИИ (10 видео)
+    // WEBSURG PROFESSIONAL VIDEOS - Esophagogastric Surgery (16 видео)
+    // Note: Requires WebSurg subscription to view
+    {
+      title: 'Minimally Invasive Ivor Lewis Esophagectomy',
+      description: 'Two-field lymphadenectomy for Siewert II tumors using minimally invasive approach. Professional surgical video from WebSurg platform.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7154',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 579,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80',
+    },
+    {
+      title: 'Robotic Esophagojejunostomy in Total Gastrectomy',
+      description: 'Laparoscopic total gastrectomy with robotic esophagojejunostomy anastomosis. WebSurg professional educational content.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7509',
+      operationType: "GASTRECTOMY",
+      method: "ROBOTIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 594,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579165466741-7f35e4755660?w=800&q=80',
+    },
+    {
+      title: 'Laparoscopic Distal Gastrectomy with Billroth I',
+      description: 'D2 lymphadenectomy with modified delta-shaped Billroth I reconstruction. Professional WebSurg video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7402',
+      operationType: "GASTRECTOMY",
+      method: "LAPAROSCOPIC",
+      difficulty: "MEDIUM",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 810,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579154392429-0e6b4e850ad2?w=800&q=80',
+    },
+    {
+      title: 'Totally Laparoscopic Pylorus-Preserving Gastrectomy',
+      description: 'Early gastric cancer treatment with pylorus preservation technique. WebSurg professional video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7403',
+      operationType: "GASTRECTOMY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 697,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80',
+    },
+    {
+      title: 'Mucosal Injury During Laparoscopic Heller Cardiomyotomy',
+      description: 'Management of Dor fundoplication for esophageal perforation repair. WebSurg educational video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7287',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 704,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=800&q=80',
+    },
+    {
+      title: 'Robotic Single Port Toupet Fundoplication',
+      description: 'Implementation of da Vinci SP system for anti-reflux surgery. Professional WebSurg content.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7180',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "ROBOTIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 579,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80',
+    },
+    {
+      title: 'Transthoracic Robotic Esophagectomy',
+      description: 'Comprehensive surgical technique for esophageal cancer resection. WebSurg professional video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6893',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "ROBOTIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 3424,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
+    },
+    {
+      title: 'Totally Laparoscopic Gastrectomy with D2 Lymphadenectomy',
+      description: 'Intracorporeal Roux-en-Y reconstruction for gastric cancer. WebSurg educational content.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6889',
+      operationType: "GASTRECTOMY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 1023,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    },
+    {
+      title: 'Lymphadenectomy in Esophageal Resection',
+      description: 'Systematic approach to lymph node dissection during esophagectomy. WebSurg professional video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6654',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 2011,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80',
+    },
+    {
+      title: 'Salvage Endoscopic Submucosal Resection (ESR)',
+      description: 'ESO technique for residual or recurrent early esophageal neoplasia. WebSurg video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6632',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 1013,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=800&q=80',
+    },
+    {
+      title: 'Minimally Invasive Ivor Lewis for Caustic Stricture',
+      description: 'Stepwise approach to esophageal reconstruction after caustic injury. WebSurg professional content.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6631',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 816,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80',
+    },
+    {
+      title: 'Robotic-Assisted Enucleation of Esophageal Leiomyoma',
+      description: 'Minimally invasive technique for benign esophageal tumor removal. WebSurg video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en6630',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "ROBOTIC",
+      difficulty: "MEDIUM",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 580,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=800&q=80',
+    },
+    {
+      title: 'Laparoscopic Management of Post-Esophagectomy Hernia',
+      description: 'Acute diaphragmatic hernia repair after esophageal resection. WebSurg professional video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7405',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 497,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80',
+    },
+    {
+      title: 'Epiphrenic Diverticula Surgery',
+      description: 'Laparoscopic approach to distal esophageal diverticula. WebSurg educational video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7096',
+      operationType: "ESOPHAGEAL_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 1023,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=800&q=80',
+    },
+    {
+      title: 'EUS-Guided Radiofrequency Ablation of Pancreatic NET',
+      description: 'Pancreatic neuroendocrine tumor treatment using endoscopic ultrasound. WebSurg video.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7404',
+      operationType: "PANCREATIC_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 594,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    },
+    {
+      title: 'EUS-Guided Biliary Drainage for Pancreatic Cancer',
+      description: 'Obstructive jaundice management in advanced pancreatic cancer. WebSurg professional content.',
+      videoUrl: 'https://websurg.com/en/doi/vd01en7406',
+      operationType: "PANCREATIC_SURGERY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'WebSurg Specialists',
+      clinic: 'IRCAD WebSurg',
+      durationMinutes: 809,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80',
+    },
+    // ДОПОЛНИТЕЛЬНЫЕ ЛАПАРОСКОПИЧЕСКИЕ ОПЕРАЦИИ (9 видео)
     {
       title: 'Лапароскопическая холецистэктомия: стандартная техника',
       description: 'Детальная демонстрация этапов стандартной лапароскопической холецистэктомии. Установка портов, выделение треугольника Кало, клипирование и пересечение пузырного протока и артерии, удаление желчного пузыря. Продолжительность операции 45 минут.',
@@ -541,7 +746,7 @@ async function main() {
     await prisma.video.create({ data: video });
   }
 
-  console.log('✅ Видео созданы (30 видео)');
+  console.log('✅ Видео созданы (46 видео, включая 16 WebSurg профессиональных видео)');
 
   // Создание статей (15 статей)
   const articles = [
