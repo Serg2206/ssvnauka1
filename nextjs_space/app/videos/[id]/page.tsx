@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Clock, Video as VideoIcon, ArrowLeft, User, Building, ExternalLink, Lock, GraduationCap, Film } from 'lucide-react';
+import { Clock, Video as VideoIcon, ArrowLeft, User, Building, ExternalLink, Lock, GraduationCap, Film, Play } from 'lucide-react';
 import { prisma } from '@/lib/db';
 import { SurgicalMethod, Difficulty } from '@/lib/types';
 
@@ -195,6 +195,46 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
                     <p className="text-sm text-slate-400 mt-4">
                       <ExternalLink size={14} className="inline mr-1" />
                       Откроется в новой вкладке • Контент с ежегодных конференций SAGES
+                    </p>
+                  </div>
+                </div>
+              ) : video.videoUrl.includes('medtube.net') ? (
+                // MedTube Free Educational Videos Display
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
+                  {video.thumbnailUrl && (
+                    <>
+                      <Image
+                        src={video.thumbnailUrl}
+                        alt={video.title}
+                        fill
+                        className="object-cover opacity-30"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-red-900/95 via-red-900/70 to-red-900/50" />
+                    </>
+                  )}
+                  <div className="relative z-10 text-center">
+                    <div className="mb-6 inline-flex items-center justify-center w-20 h-20 bg-red-600/20 backdrop-blur-sm rounded-full border-2 border-red-400/50">
+                      <Play className="text-red-400" size={40} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      Бесплатное образовательное видео MedTube
+                    </h3>
+                    <p className="text-slate-300 mb-6 max-w-md">
+                      Образовательный контент от MedTube.net - крупнейшей мировой платформы медицинских видео. <br/>
+                      <strong className="text-red-400">Бесплатный доступ для 450,000+ медицинских профессионалов из 180 стран</strong>
+                    </p>
+                    <a
+                      href={video.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                    >
+                      <ExternalLink size={20} />
+                      Открыть на MedTube
+                    </a>
+                    <p className="text-sm text-slate-400 mt-4">
+                      <ExternalLink size={14} className="inline mr-1" />
+                      Откроется в новой вкладке • 30,000+ клинических видео • Бесплатная регистрация
                     </p>
                   </div>
                 </div>
