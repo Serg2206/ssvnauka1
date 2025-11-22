@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **101 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **115 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (101 Total - Comprehensive Surgical Library!)
+## 📊 Videos Added (115 Total - Complete Surgical Library!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -130,6 +130,23 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 99. **Robotic Pancreaticoduodenectomy (Whipple) for Pancreatic Head Tumor** (25:00)
 100. **Laparoscopic Distal Pancreatectomy with Spleen Preservation** (18:00)
 101. **Laparoscopic Left Hepatectomy for Liver Metastases** (21:00)
+
+### NEW VIDEOS - Image-Guided Surgery (14 Additional Videos):
+
+102. **Surgical Diagnosis and Management: Emerging Role of Intraoperative Cholangioscopy** (34:00) - ME Giménez
+103. **Transcystic Laparoscopic Bile Duct Cholangioscopy: Simulation Training** (12:00) - ME Giménez
+104. **Percutaneous Transhepatic Metallic Stent Placement Under Fluoroscopy** (08:00) - ME Giménez
+105. **How to Use Translaparoscopic Ultrasound and Interpret Anatomical Landmarks** (17:00) - ME Giménez
+106. **Computer-Assisted Surgery: The 21st Century Revolution** (44:00) - ME Giménez
+107. **Severe Acute Pancreatitis: Lessons Learned from Image-Guided Management** (39:00) - ME Giménez
+108. **Percutaneous Surgery and E-Mentoring: Remote Training Possibilities** (33:00) - ME Giménez
+109. **Percutaneous Transhepatic Cholangioscopy and Endocanalicular Bile Duct Biopsy** (04:00) - ME Giménez
+110. **Percutaneous Transhepatic Cholangioscopy and Lithotripsy in Modified Anatomy** (14:00) - ME Giménez
+111. **Step-by-Step Intraoperative Pancreatoscopy for Intraductal Pancreatic Cyst Biopsy** (04:00) - ME Giménez
+112. **ICG Fluorescence Imaging in Laparoscopic Liver Surgery** (12:00)
+113. **Intraoperative Ultrasound-Guided Liver Resection Technique** (15:00)
+114. **Fluorescence-Guided Biliary Surgery: Technical Aspects and Clinical Applications** (18:00)
+115. **3D Laparoscopy in Hepatobiliary Surgery: Advantages and Learning Curve** (16:00)
 
 ---
 
@@ -263,8 +280,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 143 videos
-- WebSurg Professional: 101 videos (COMPREHENSIVE LIBRARY - 85 new videos added!)
+**Total Videos**: 157 videos
+- WebSurg Professional: 115 videos (COMPLETE LIBRARY - 99 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
