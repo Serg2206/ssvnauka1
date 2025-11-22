@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **191 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
+Your SSV Nauka platform now includes **207 professional surgical videos** from WebSurg (IRCAD - International Research Center on Surgical Robotics).
 
 ## What is WebSurg?
 
@@ -10,7 +10,7 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 
 ---
 
-## 📊 Videos Added (191 Total - World-Class Urological Excellence!)
+## 📊 Videos Added (207 Total - Complete Surgical Excellence!)
 
 ### Esophagogastric Surgery Videos:
 
@@ -239,6 +239,25 @@ WebSurg is a premium educational platform providing high-quality surgical videos
 190. **Laparoscopic Right Radical Nephrectomy for Renal Cell Carcinoma** (12:00) - A Charnoz
 191. **Ultrapreservation in Robotic Radical Prostatectomy: Anterior, Antegrade Approaches** (32:00) - T Piechaud
 
+### NEW VIDEOS - Endocrine Surgery (16 Additional Videos):
+
+192. **Robotic Right Adrenalectomy for Cushing's Syndrome** (09:00) - M Vix, M Ignat
+193. **Laparoscopic Left Adrenalectomy for Pheochromocytoma** (11:00) - D Mutter, B Seeliger
+194. **Robotic Transaxillary Thyroidectomy** (05:00) - WY Chung, M Vix
+195. **PerOral Endoscopic Thyroidectomy (POET): A Novel Pioneering Technique** (25:00) - A Anuwong
+196. **Fully Robotically Assisted Transabdominal Left Adrenalectomy for Hypercortisolism** (13:00) - M Vix
+197. **Minimally Invasive Right Superior Parathyroidectomy (MIVAP)** (08:00) - M Vix, HA Mercoli
+198. **Minimally Invasive Video-Assisted Parathyroidectomy with Augmented Reality** (01:00) - M Vix, L Soler
+199. **Video-Assisted Exploration of the Four Parathyroid Lobes for Primary Hyperparathyroidism** (09:00) - M Vix
+200. **Totally Endoscopic Left Hemithyroidectomy: Axillary Approach for Papillary Carcinoma** (11:00) - AR Shah
+201. **Is Robotic Thyroid Surgery a Real Progress?** (13:00) - WY Chung
+202. **Is Minimally Invasive Thyroidectomy and Parathyroidectomy a Real Progress?** (10:00) - QY Duh
+203. **Robotic Parathyroid Surgery** (08:00) - P Aidan
+204. **Parathyroid Adenoma: Surgical Management** (04:00) - P Aidan
+205. **Video-Assisted Thyroidectomy and Central Neck Dissection** (09:00) - R Bellantone
+206. **Use of NIR Guided Surgery During Thyroidectomy and Parathyroidectomy** (08:00) - A Anuwong
+207. **Current State and Future Prospects in the Management of Advanced Thyroid Malignancies** (47:00) - G Randolph
+
 ---
 
 ## 🎯 How It Works
@@ -371,8 +390,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 233 videos
-- WebSurg Professional: 191 videos (WORLD-CLASS LIBRARY - 175 new videos added!)
+**Total Videos**: 249 videos
+- WebSurg Professional: 207 videos (COMPLETE SURGICAL LIBRARY - 191 new videos added!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
