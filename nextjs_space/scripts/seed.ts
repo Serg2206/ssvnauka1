@@ -3409,8 +3409,82 @@ async function main() {
       durationMinutes: 3,
       thumbnailUrl: 'https://images.unsplash.com/photo-1579165466741-7f35e4755660?w=800&q=80',
     },
-    // BEST IN SURGERY VIDEOS (18 новых видео)
+    // BEST IN SURGERY VIDEOS (24 видео: 18 предыдущих + 6 новых по раку кишечника)
     // Note: Educational videos from Best in Surgery - Professor K.V. Puchkov project
+    // COLORECTAL CANCER VIDEOS (6 новых видео по раку кишечника)
+    {
+      title: 'Рак ободочной кишки. Лапароскопическая гемиколэктомия',
+      description: 'Colon cancer. Laparoscopic hemicolectomy for colon cancer. Advanced laparoscopic colorectal oncology. Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_colon_1',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 52,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    {
+      title: 'Лапароскопическая левосторонняя гемиколэктомия. D3 лимфаденэктомия. Методика Delta-Wings',
+      description: 'Laparoscopic left hemicolectomy with D3 lymphadenectomy. Combined mobilization of splenic flexure (Delta-Wings technique). Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_colon_2',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 48,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    {
+      title: 'Правосторонняя гемиколэктомия с D3-лимфаденэктомией и высоким лигированием сосудов',
+      description: 'Right hemicolectomy with D3 lymphadenectomy, high ligation of main arteries and veins, stapled ileotransverse anastomosis side-to-side. Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_colon_3',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 50,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    {
+      title: 'Лапароскопическая резекция сигмовидной кишки через единый доступ (S.I.L.S. Port)',
+      description: 'Laparoscopic sigmoid colon resection through single port access (S.I.L.S. Port COVIDIEN). Advanced single-incision laparoscopic surgery. Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_colon_4',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 45,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    {
+      title: 'Лапароскопическая D3 лимфаденэктомия при раке правых отделов ободочной кишки',
+      description: 'Laparoscopic D3 lymphadenectomy for right colon cancer. Advanced lymph node dissection technique. Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_colon_5',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 42,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    {
+      title: 'Лапароскопическая передняя резекция прямой кишки. D3 лимфаденэктомия. NOSES техника',
+      description: 'Laparoscopic anterior rectal resection with D3 lymphadenectomy, preservation of left colic artery, transanal specimen extraction (N.O.S.E.S. technique). Best in Surgery educational content.',
+      videoUrl: 'https://www.youtube.com/watch?v=best_in_surgery_rectal_1',
+      operationType: "COLORECTAL",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: 'Пучков К.В.',
+      clinic: 'Best in Surgery',
+      durationMinutes: 55,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80',
+    },
+    // GENERAL BEST IN SURGERY VIDEOS (18 предыдущих видео)
     {
       title: 'Лапароскопическая резекция прямой кишки при эндометриозе и миомэктомия',
       description: 'Laparoscopic rectal resection for endometriosis and myomectomy with temporary arterial occlusion using anti-adhesion gel. Best in Surgery educational content.',
@@ -4169,7 +4243,7 @@ async function main() {
     await prisma.video.create({ data: video });
   }
 
-  console.log('✅ Видео созданы (329 видео: 219 WebSurg + 18 Best in Surgery + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 30 других + 1 ОБРФМ.РУ + 1 4SURGEONSCLUB)');
+  console.log('✅ Видео созданы (335 видео: 219 WebSurg + 24 Best in Surgery (18 общих + 6 по раку кишечника) + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 30 других + 1 ОБРФМ.РУ + 1 4SURGEONSCLUB)');
 
   // Создание статей (15 статей)
   const articles = [

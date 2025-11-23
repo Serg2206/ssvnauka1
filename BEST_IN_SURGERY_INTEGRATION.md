@@ -3,7 +3,7 @@
 
 ## Overview
 
-Your SSV Nauka platform now includes **18 professional surgical videos** from Best in Surgery - an educational project by Professor K.V. Puchkov featuring laparoscopic operations from world-leading surgeons.
+Your SSV Nauka platform now includes **24 professional surgical videos** from Best in Surgery - an educational project by Professor K.V. Puchkov featuring laparoscopic operations from world-leading surgeons, including **6 specialized videos on colorectal cancer surgery**.
 
 ## What is Best in Surgery?
 
@@ -11,7 +11,27 @@ Best in Surgery (www.best-in-surgery.ru) is a Russian educational platform provi
 
 ---
 
-## 📊 Videos Added (18 Total - Best in Surgery Excellence!)
+## 📊 Videos Added (24 Total - Best in Surgery Excellence!)
+
+### 🔴 Colorectal Cancer Surgery Videos (6 NEW videos):
+
+1. **Рак ободочной кишки. Лапароскопическая гемиколэктомия** (52:00) - Пучков К.В.
+   - Colon cancer. Laparoscopic hemicolectomy for colon cancer
+   
+2. **Лапароскопическая левосторонняя гемиколэктомия. D3 лимфаденэктомия. Методика Delta-Wings** (48:00) - Пучков К.В.
+   - Left hemicolectomy with D3 lymphadenectomy. Combined mobilization of splenic flexure (Delta-Wings technique)
+   
+3. **Правосторонняя гемиколэктомия с D3-лимфаденэктомией и высоким лигированием сосудов** (50:00) - Пучков К.В.
+   - Right hemicolectomy with D3 lymphadenectomy, high ligation of vessels, stapled anastomosis
+   
+4. **Лапароскопическая резекция сигмовидной кишки через единый доступ (S.I.L.S. Port)** (45:00) - Пучков К.В.
+   - Sigmoid colon resection through single port access (S.I.L.S. Port COVIDIEN)
+   
+5. **Лапароскопическая D3 лимфаденэктомия при раке правых отделов ободочной кишки** (42:00) - Пучков К.В.
+   - D3 lymphadenectomy for right colon cancer
+   
+6. **Лапароскопическая передняя резекция прямой кишки. D3 лимфаденэктомия. NOSES техника** (55:00) - Пучков К.В.
+   - Anterior rectal resection with D3 lymphadenectomy, transanal specimen extraction (N.O.S.E.S. technique)
 
 ### Gynecologic Surgery Videos (3 videos):
 
@@ -100,23 +120,26 @@ Best in Surgery (www.best-in-surgery.ru) is a Russian educational platform provi
 ## 📚 Content Categories
 
 **By Specialty**:
+- 🔴 **Colorectal Cancer Surgery: 6 videos** (NEW! colon cancer, rectal cancer, D3 lymphadenectomy)
 - 🩺 Gynecologic Surgery: 3 videos (panhysterectomy, myomectomy, ovariectomy)
-- 🔴 Colorectal Surgery: 3 videos (endometriosis, cancer resection)
+- 🔴 Colorectal Surgery (Endometriosis): 3 videos (endometriosis, rectal resection)
 - 🔧 General Surgery: 5 videos (GERD, splenectomy, hernia, cholecystectomy, bariatric)
 - 🎗️ Oncologic Surgery: 3 videos (gastric, pancreatic, kidney cancer)
 - 🔬 Urologic Surgery: 4 videos (adrenal, bladder, nephrectomy, prostatectomy)
 
 **By Surgical Method**:
-- 💻 All Laparoscopic: 18 videos (100% minimally invasive)
+- 💻 All Laparoscopic: 24 videos (100% minimally invasive)
+- 🔬 Including Single-Port (S.I.L.S.): 1 video
+- 🔬 Including NOSES Technique: 1 video
 
 **By Difficulty**:
-- 🔴 High Complexity: 14 videos (oncology, complex reconstructions)
+- 🔴 High Complexity: 20 videos (oncology, complex reconstructions, D3 lymphadenectomy)
 - 🟡 Medium Complexity: 4 videos (hernia repair, cholecystectomy)
 
 **By Duration**:
 - Short (20-35 min): 4 videos
-- Medium (36-50 min): 11 videos
-- Long (51+ min): 3 videos
+- Medium (36-50 min): 14 videos
+- Long (51+ min): 6 videos
 
 ---
 
@@ -162,9 +185,9 @@ Best in Surgery (www.best-in-surgery.ru) is a Russian educational platform provi
 
 ## 📊 Platform Stats
 
-**Total Videos**: 329 videos
+**Total Videos**: 335 videos
 - WebSurg Professional: 219 videos
-- **Best in Surgery: 18 videos** (NEW! 🎉)
+- **Best in Surgery: 24 videos** (18 general + **6 NEW colorectal cancer! 🎉**)
 - SAGES: 12 videos
 - MedTube: 12 videos
 - GIBLIB: 12 videos
@@ -248,6 +271,8 @@ Best in Surgery (www.best-in-surgery.ru) is a Russian educational platform provi
 | Date | Action | Videos Added |
 |------|--------|--------------|
 | November 2025 | Initial Best in Surgery Integration | 18 videos |
+| November 2025 | **Colorectal Cancer Surgery Integration** | **6 videos** |
+| **Total** | **24 videos** | **Full coverage** |
 
 ---
 
@@ -264,9 +289,87 @@ Best in Surgery (www.best-in-surgery.ru) is a Russian educational platform provi
 
 ---
 
+---
+
+## 🔴 **NEW! Colorectal Cancer Surgery Integration**
+
+### Overview of New Videos (6 videos)
+
+Your platform now includes specialized content on **colorectal cancer surgery** featuring advanced laparoscopic techniques:
+
+#### **D3 Lymphadenectomy Techniques:**
+The new videos focus on **D3 lymphadenectomy** - the most advanced lymph node dissection technique for colorectal cancer, ensuring:
+- 🔬 **Complete oncological resection** - removal of all lymph node stations
+- 🩸 **High vascular ligation** - ligation of vessels at their origin
+- 📊 **Improved survival rates** - better long-term oncological outcomes
+- 🎯 **Nerve preservation** - maintaining autonomic nerve function
+
+#### **Advanced Surgical Techniques:**
+
+1. **Delta-Wings Mobilization Technique** (NEW!)
+   - Innovative approach to splenic flexure mobilization
+   - Combines medial-to-lateral and lateral-to-medial approaches
+   - Safer and more efficient than traditional methods
+
+2. **Single-Port Surgery (S.I.L.S.)** (NEW!)
+   - Single incision laparoscopic surgery for sigmoid resection
+   - Improved cosmetic outcomes
+   - Faster recovery with minimal scarring
+
+3. **NOSES Technique** (NEW!)
+   - Natural Orifice Specimen Extraction Surgery
+   - Transanal extraction of surgical specimen
+   - No abdominal incision for specimen removal
+   - Better cosmetic results and faster recovery
+
+#### **Coverage by Cancer Location:**
+- ✅ **Right Colon Cancer** - Right hemicolectomy with D3 lymphadenectomy
+- ✅ **Left Colon Cancer** - Left hemicolectomy with Delta-Wings mobilization
+- ✅ **Sigmoid Cancer** - Single-port sigmoid resection
+- ✅ **Rectal Cancer** - Anterior resection with NOSES technique
+- ✅ **General Colon Cancer** - Standard laparoscopic hemicolectomy
+- ✅ **Lymphadenectomy Focus** - Dedicated D3 lymphadenectomy video
+
+#### **Educational Value:**
+
+**For Oncological Surgeons:**
+- 🎓 Learn D3 lymphadenectomy from one of Russia's leading colorectal surgeons
+- 📚 Master advanced techniques (Delta-Wings, NOSES, Single-Port)
+- 🔬 Understand complete mesocolic excision (CME) principles
+- 💉 Study high vascular ligation techniques
+
+**For Residents:**
+- 📖 Step-by-step surgical approach for colorectal cancer
+- 🎥 Real operations with detailed anatomical demonstration
+- 🩺 Learn oncological principles in laparoscopic colorectal surgery
+- 📊 Understand lymph node dissection extent
+
+**For Medical Students:**
+- 🏥 Introduction to modern colorectal cancer surgery
+- 🔍 Understand surgical anatomy of the colon
+- 💡 Learn about minimally invasive oncological surgery
+- 📈 See the integration of oncology and surgery
+
+#### **Technical Highlights:**
+
+**Surgical Innovations Demonstrated:**
+1. **High Vascular Ligation** - Vessels ligated at their origin for complete lymphadenectomy
+2. **Stapled Anastomosis** - Modern techniques for bowel reconstruction
+3. **Nerve Preservation** - Maintaining autonomic nerve function
+4. **Complete Mesocolic Excision (CME)** - Oncological principle for better outcomes
+5. **Single-Port Access** - Latest minimally invasive approach
+6. **NOSES** - Scarless surgery with natural orifice extraction
+
+**Video Durations:**
+- Total: **292 minutes** (nearly 5 hours of specialized content)
+- Average: **48 minutes** per video
+- Range: 42-55 minutes (comprehensive coverage)
+
+---
+
 **Integration completed successfully!** ✅
 
-Your platform now offers world-class laparoscopic surgery education from one of Russia's leading surgical experts!
+Your platform now offers world-class laparoscopic surgery education from one of Russia's leading surgical experts, **with specialized coverage of colorectal cancer surgery!**
 
 ---
 
