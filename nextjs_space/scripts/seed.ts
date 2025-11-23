@@ -4211,6 +4211,104 @@ async function main() {
       durationMinutes: 312,
       thumbnailUrl: 'https://images.unsplash.com/photo-1579154392429-0e6b4e850ad2?w=800&q=80',
     },
+    // HIGHER SCHOOL OF ONCOLOGY - CT INTENSIVE MODULES (8 новых образовательных модулей)
+    // Note: Educational modules from Higher School of Oncology - CT in Oncology Intensive
+    {
+      title: 'КТ-анатомия: Базовые навыки просмотра КТ-исследований',
+      description: 'Basic CT anatomy and viewing skills. Educational module from Higher School of Oncology CT Intensive covering fundamental CT anatomy, image viewing tools, archive creation, work modes, phases and contrast protocols. Learn to identify any organ on your computer screen with confidence.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_1',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "MEDIUM",
+      author: 'Ксения Замятина, Аня Гончар, Мария Сулейманова',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 90,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'Инструменты просмотра КТ: Режимы работы и фазы контрастирования',
+      description: 'CT viewing tools and contrast phases. Educational module covering advanced CT viewing software, creating archives, understanding arterial/venous/delayed phases, contrast protocols selection for different clinical scenarios. Essential skills for oncology practice.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_2',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "MEDIUM",
+      author: 'Ксения Замятина, Аня Гончар',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 85,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'КТ-диагностика в онкологии: Оценка онкологических образований',
+      description: 'CT diagnostics in oncology context. Educational module teaching how to evaluate oncological formations in different organs, distinguish benign from malignant lesions, make CT review most useful for diagnosis and staging of important oncological conditions.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_3',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "HIGH",
+      author: 'Ксения Замятина, Ксения Борискина',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 120,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'КТ органов грудной клетки в онкологии: Лёгкие и средостение',
+      description: 'Chest CT in oncology. Educational module covering lung nodules evaluation, mediastinal masses, lymph node assessment, pleural pathology. Learn to identify lung cancer, thymic tumors, lymphoma and other thoracic malignancies on CT.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_4',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "HIGH",
+      author: 'Аня Гончар, Мария Сулейманова',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 110,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'КТ органов брюшной полости: Печень, поджелудочная железа, ЖКТ',
+      description: 'Abdominal CT in oncology. Educational module teaching evaluation of liver lesions (HCC, metastases), pancreatic masses, gastric and colorectal cancer. Learn contrast enhancement patterns, staging criteria, complications assessment.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_5',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "HIGH",
+      author: 'Ксения Замятина, Ксения Борискина',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 115,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'Практическое занятие: Клинические случаи КТ в онкологии (часть 1)',
+      description: 'Practical clinical cases part 1. Interactive educational session discussing most common and relevant clinical scenarios oncologists encounter. Real cases analysis with expert radiologists guidance. Learn systematic approach to CT interpretation.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_6',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "HIGH",
+      author: 'Команда преподавателей ВШО',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 95,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'Практическое занятие: Клинические случаи КТ в онкологии (часть 2)',
+      description: 'Practical clinical cases part 2. Advanced clinical scenarios including complex oncological situations, treatment response assessment, complications recognition. Learn differential diagnosis and multidisciplinary approach to CT findings.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_7',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "HIGH",
+      author: 'Команда преподавателей ВШО',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 100,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
+    {
+      title: 'Чек-листы и алгоритмы просмотра КТ: Систематический подход',
+      description: 'CT review checklists and algorithms. Educational module providing structured approach to CT interpretation. Create your own checklist for disc review, learn systematic organ-by-organ evaluation, avoid common pitfalls. Essential for clinical practice.',
+      videoUrl: 'https://www.youtube.com/watch?v=hso_ct_module_8',
+      operationType: "OTHER",
+      method: "OTHER",
+      difficulty: "MEDIUM",
+      author: 'Ксения Замятина, Ксения Борискина',
+      clinic: 'Higher School of Oncology',
+      durationMinutes: 75,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80',
+    },
     // ДОПОЛНИТЕЛЬНЫЕ ОБРАЗОВАТЕЛЬНЫЕ ЛЕКЦИИ ДЛЯ ВРАЧЕЙ (2 видео)
     // Note: Профессиональные онлайн-семинары от образовательных медицинских центров
     {
@@ -4243,7 +4341,7 @@ async function main() {
     await prisma.video.create({ data: video });
   }
 
-  console.log('✅ Видео созданы (335 видео: 219 WebSurg + 24 Best in Surgery (18 общих + 6 по раку кишечника) + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 30 других + 1 ОБРФМ.РУ + 1 4SURGEONSCLUB)');
+  console.log('✅ Видео созданы (343 видео: 219 WebSurg + 24 Best in Surgery (18 общих + 6 по раку кишечника) + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 8 Higher School of Oncology CT + 30 других + 1 ОБРФМ.РУ + 1 4SURGEONSCLUB)');
 
   // Создание статей (15 статей)
   const articles = [
