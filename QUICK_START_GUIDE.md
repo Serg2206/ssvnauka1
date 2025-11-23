@@ -1,226 +1,461 @@
 
-# 🚀 Быстрый старт - Загрузка SSV Nauka на GitHub
+# 🚀 SSV Nauka - Быстрый старт
 
-## 📋 Пошаговая инструкция для Windows 11
+## 📋 Простая инструкция для начинающих
 
-### Шаг 1: Скачайте проект 📥
+### ⚡ За 5 минут до запуска!
 
-1. В интерфейсе DeepAgent нажмите кнопку **"Files"** (справа вверху)
-2. Найдите папку `/home/ubuntu/ssvnauka`
-3. Скачайте всю папку или файл `ssvnauka-project.tar.gz`
-4. Распакуйте в `C:\Projects\ssvnauka\`
+---
 
-**Структура после распаковки:**
+## Шаг 1️⃣: Установите необходимые программы
+
+### Node.js (обязательно)
+
+1. Откройте: https://nodejs.org/
+2. Скачайте **LTS версию** (зеленая кнопка)
+3. Запустите установщик
+4. Нажимайте "Далее" везде
+5. **Перезагрузите компьютер**
+
+### Git (обязательно)
+
+**Windows:**
+1. Откройте: https://git-scm.com/download/win
+2. Скачайте установщик
+3. Запустите, используйте настройки по умолчанию
+
+**Mac:**
+```bash
+# В терминале
+brew install git
 ```
-C:\Projects\ssvnauka\
-├── nextjs_space\          ← Основной проект
-├── PUSH_TO_GITHUB.bat     ← Скрипт для Windows
-├── PUSH_TO_GITHUB.sh      ← Скрипт для Mac/Linux
-└── README.md              ← Документация
+
+**Linux:**
+```bash
+sudo apt-get install git
 ```
 
 ---
 
-### Шаг 2: Создайте Personal Access Token 🔑
+## Шаг 2️⃣: Скачайте проект
 
-**Это ОБЯЗАТЕЛЬНЫЙ шаг!** GitHub больше не принимает обычные пароли.
+### Способ А: Через Git (рекомендуется)
 
-1. **Откройте:** https://github.com/settings/tokens
-2. **Нажмите:** "Generate new token" → "Generate new token (classic)"
-3. **Настройте токен:**
-   - **Note:** `SSV Nauka Deploy`
-   - **Expiration:** 90 days (или на ваш выбор)
-   - **Scopes:** Отметьте **✅ repo** (полный доступ к репозиториям)
-4. **Скопируйте токен!** ⚠️ Он больше не будет показан!
+1. **Откройте терминал/командную строку:**
+   - **Windows:** Win + R → введите `cmd` → Enter
+   - **Mac:** Cmd + Space → введите `Terminal` → Enter
+   - **Linux:** Ctrl + Alt + T
 
-**Сохраните токен в надежное место** (например, в Notepad)
+2. **Перейдите в папку для проектов:**
+```bash
+# Windows
+cd C:\Users\ВашеИмя\Documents
+
+# Mac/Linux
+cd ~/Documents
+```
+
+3. **Скачайте проект:**
+```bash
+git clone https://github.com/Serg2206/ssvnauka1.git
+cd ssvnauka1
+```
+
+### Способ Б: Скачать ZIP
+
+1. Откройте: https://github.com/Serg2206/ssvnauka1
+2. Нажмите зеленую кнопку **"Code"**
+3. Нажмите **"Download ZIP"**
+4. Распакуйте в удобную папку
+5. Откройте папку в терминале
 
 ---
 
-### Шаг 3: Запустите автоматический скрипт 🎯
+## Шаг 3️⃣: Установите зависимости
 
-#### Вариант A: Через двойной клик (проще всего)
+```bash
+# Перейдите в папку проекта
+cd ssvnauka1/nextjs_space
 
-1. Откройте папку `C:\Projects\ssvnauka\`
-2. **Дважды кликните** на файл `PUSH_TO_GITHUB.bat`
-3. Следуйте инструкциям в окне:
-   - Подтвердите загрузку: введите `y` и нажмите Enter
-   - Username: `Serg2206-`
-   - Password: **вставьте ваш Personal Access Token**
-4. Готово! ✅
+# Установите Yarn (если еще не установлен)
+npm install -g yarn
 
-#### Вариант B: Через PowerShell
+# Установите зависимости проекта
+yarn install
+```
 
+⏱️ **Подождите 3-5 минут** — это нормально!
+
+---
+
+## Шаг 4️⃣: Создайте файл настроек
+
+### Windows (PowerShell):
 ```powershell
-# 1. Откройте PowerShell (Win + X → Windows Terminal)
-cd C:\Projects\ssvnauka
-
-# 2. Запустите скрипт
-.\PUSH_TO_GITHUB.bat
+cd ssvnauka1\nextjs_space
+New-Item .env -ItemType File
+notepad .env
 ```
 
-#### Вариант C: Ручная загрузка (если скрипт не работает)
-
-```powershell
-cd C:\Projects\ssvnauka\nextjs_space
-
-# Инициализация Git
-git init
-git add -A
-git commit -m "SSV Nauka educational platform"
-git branch -M main
-
-# Подключение к GitHub
-git remote add origin https://github.com/Serg2206-/ssvnauka.git
-
-# Загрузка (заменит старое содержимое)
-git push -f origin main
+### Mac/Linux:
+```bash
+cd ssvnauka1/nextjs_space
+touch .env
+nano .env
 ```
+
+### Скопируйте в файл `.env`:
+```env
+DATABASE_URL="file:./prisma/dev.db"
+NEXTAUTH_SECRET="ssvnauka-secret-key-2025-production"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+**Сохраните файл!**
 
 ---
 
-### Шаг 4: Проверьте результат ✅
+## Шаг 5️⃣: Настройте базу данных
 
-1. **Откройте:** https://github.com/Serg2206-/ssvnauka
-2. **Проверьте:**
-   - ✅ Видите 100 файлов
-   - ✅ README.md отображается на главной странице
-   - ✅ Есть папки: app, components, lib, prisma
-   - ✅ Последний коммит: "SSV Nauka educational platform"
+```bash
+# Создайте базу данных
+yarn prisma generate
+yarn prisma migrate dev
+
+# Заполните тестовыми данными (309 видео!)
+yarn prisma db seed
+```
+
+✅ **Готово!** База данных создана с 309 видео!
+
+---
+
+## Шаг 6️⃣: Запустите сайт
+
+```bash
+yarn dev
+```
+
+### Откройте в браузере:
+🔗 **http://localhost:3000**
+
+---
+
+## 🔐 Тестовые аккаунты
+
+### Администратор:
+- Email: `admin@ssvnauka.com`
+- Password: `admin123`
+
+### Хирург:
+- Email: `surgeon@ssvnauka.com`
+- Password: `surgeon123`
+
+### Студент:
+- Email: `student@ssvnauka.com`
+- Password: `student123`
+
+---
+
+## ✅ Быстрая проверка
+
+После запуска `yarn dev` вы должны увидеть:
+
+```
+ready - started server on 0.0.0.0:3000
+info  - Loaded env from .../nextjs_space/.env
+event - compiled successfully
+```
+
+**Если видите это — всё работает!** 🎉
+
+---
+
+## 🛑 Остановить сайт
+
+Нажмите `Ctrl + C` в терминале
 
 ---
 
 ## 🔧 Если что-то пошло не так
 
-### Проблема 1: "Git не найден"
-```powershell
-# Установите Git:
-# https://git-scm.com/downloads
+### "Port 3000 is already in use"
+
+```bash
+# Используйте другой порт
+PORT=3001 yarn dev
 ```
 
-### Проблема 2: "Permission denied" или "Authentication failed"
-- ✅ Используйте **Personal Access Token**, а не пароль!
-- ✅ Убедитесь, что токен имеет scope: **repo**
-- ✅ Токен должен быть **активным** (не истёк)
+Откройте: http://localhost:3001
 
-### Проблема 3: "Remote already exists"
-```powershell
-cd C:\Projects\ssvnauka\nextjs_space
-git remote remove origin
-git remote add origin https://github.com/Serg2206-/ssvnauka.git
-git push -f origin main
+### "Command not found: yarn"
+
+```bash
+npm install -g yarn
 ```
 
-### Проблема 4: Скрипт не запускается
-- ✅ Убедитесь, что файл `.bat` не заблокирован Windows
-- ✅ Правой кнопкой → Properties → Unblock → Apply
-- ✅ Попробуйте запустить PowerShell от имени администратора
+### "Cannot find module"
+
+```bash
+rm -rf node_modules
+yarn install
+```
+
+### База данных не работает
+
+```bash
+rm prisma/dev.db
+yarn prisma migrate dev
+yarn prisma db seed
+```
 
 ---
 
-## 📊 Что будет загружено на GitHub
+## 📁 Что вы получите
 
-### ✅ Включено (100 файлов):
-- Весь исходный код приложения
-- React компоненты (80+)
-- API endpoints (14 маршрутов)
-- Prisma схема базы данных
-- README.md документация
-- package.json с зависимостями
-- Конфигурационные файлы
+### 📊 Статистика контента:
+- **309 видео** из 6 источников
+- **219 видео WebSurg** (профессиональные)
+- **12 видео GIBLIB** (образовательные)
+- **12 видео SAGES** (хирургические общества)
+- **12 видео MedTube** (бесплатные)
+- **12 видео World Laparoscopy** (лапароскопия)
+- **12 видео iLappSurgery** (обучающие модули)
 
-### ❌ Исключено (безопасность):
-- `.env` файл (секретные ключи)
-- `node_modules/` (30,000+ файлов)
-- `.next/` (временная сборка)
-- Логи и временные файлы
+### 🎓 Специальности:
+- Абдоминальная хирургия
+- Торакальная хирургия
+- Колоректальная хирургия
+- Эндокринная хирургия
+- Бариатрическая хирургия
+- Онкологическая хирургия
+- Гинекологическая хирургия
+- Урологическая хирургия
+
+### ✨ Функции:
+- ✅ Просмотр видео
+- ✅ Курсы и модули
+- ✅ Тесты и сертификаты
+- ✅ Отслеживание прогресса
+- ✅ Закладки
+- ✅ Поиск и фильтры
+- ✅ Адаптивный дизайн
+- ✅ Темная тема
 
 ---
 
-## 🎯 Следующие шаги после загрузки
+## 💻 Команды для работы
 
-### 1. Настройте локальную разработку
-```powershell
-cd C:\Projects\ssvnauka\nextjs_space
+```bash
+# Запуск разработки
+yarn dev
 
-# Установите зависимости
+# Просмотр базы данных
+yarn prisma studio
+
+# Пересоздать БД
+yarn prisma migrate reset
+
+# Сборка для продакшена
+yarn build
+yarn start
+```
+
+---
+
+## 📚 Полная документация
+
+Если нужны подробности:
+- 📖 **DOWNLOAD_INSTRUCTIONS.md** — полная инструкция
+- 📖 **GITHUB_SYNC_INSTRUCTIONS.md** — работа с Git
+- 📖 **VIDEO_LIBRARY_OPTIMIZATION.md** — оптимизация
+
+---
+
+## 🎯 Краткая шпаргалка
+
+### Полная установка за 2 минуты:
+
+```bash
+# 1. Клонируйте
+git clone https://github.com/Serg2206/ssvnauka1.git
+cd ssvnauka1/nextjs_space
+
+# 2. Установите
 yarn install
 
-# Создайте .env.local файл
-# (скопируйте из .env и измените DATABASE_URL)
+# 3. Создайте .env
+echo 'DATABASE_URL="file:./prisma/dev.db"' > .env
+echo 'NEXTAUTH_SECRET="secret"' >> .env
+echo 'NEXTAUTH_URL="http://localhost:3000"' >> .env
 
-# Запустите проект
+# 4. База данных
+yarn prisma generate && yarn prisma migrate dev && yarn prisma db seed
+
+# 5. Запустите
 yarn dev
 ```
 
-Откройте: http://localhost:3000
-
-### 2. Задеплойте на Vercel (рекомендуется)
-1. **Откройте:** https://vercel.com/new
-2. **Импортируйте:** https://github.com/Serg2206-/ssvnauka
-3. **Настройте переменные окружения:**
-   - `DATABASE_URL` - строка подключения к PostgreSQL
-   - `NEXTAUTH_SECRET` - случайная строка (минимум 32 символа)
-   - `NEXTAUTH_URL` - URL вашего сайта
-4. **Deploy** - автоматический деплой при каждом push!
-
-### 3. Добавьте коллаборантов
-- Settings → Collaborators
-- Пригласите членов команды
-
-### 4. Настройте Issues и Projects
-- Отслеживайте задачи
-- Планируйте новые функции
+**Готово!** → http://localhost:3000
 
 ---
 
-## 📞 Поддержка
+## 🌐 Доступ из сети
 
-### Полезные ссылки:
-- 📖 GitHub Personal Access Token: https://github.com/settings/tokens
-- 📖 Git документация: https://git-scm.com/doc
-- 📖 Vercel деплой: https://vercel.com/docs
-- 📖 Next.js документация: https://nextjs.org/docs
+Хотите открыть сайт на телефоне/планшете?
 
-### Если нужна помощь:
-1. Проверьте раздел "Если что-то пошло не так" выше
-2. Убедитесь, что Git установлен: `git --version`
-3. Проверьте, что Personal Access Token активен
-4. Убедитесь в наличии интернет соединения
+1. **Узнайте свой IP:**
 
----
+**Windows:**
+```cmd
+ipconfig
+```
+Найдите "IPv4 Address": например, `192.168.1.100`
 
-## ✅ Чек-лист финальной проверки
+**Mac/Linux:**
+```bash
+ifconfig | grep inet
+```
 
-- [ ] Git установлен (`git --version`)
-- [ ] Проект скачан в `C:\Projects\ssvnauka\`
-- [ ] Personal Access Token создан (scope: repo)
-- [ ] Скрипт `PUSH_TO_GITHUB.bat` запущен
-- [ ] Введены учетные данные (username + token)
-- [ ] Репозиторий доступен: https://github.com/Serg2206-/ssvnauka
-- [ ] README.md отображается корректно
-- [ ] Все файлы загружены (100 файлов)
+2. **На другом устройстве откройте:**
+```
+http://192.168.1.100:3000
+```
+
+(Замените на ваш IP)
 
 ---
 
-## 🎉 Поздравляем!
+## 🎥 Видео-инструкция
 
-Ваш проект **SSV Nauka** теперь на GitHub! 🚀
-
-**Репозиторий:** https://github.com/Serg2206-/ssvnauka
-
-**Статистика:**
-- 📦 100 файлов
-- 📝 11,898 строк кода
-- 📚 15 интерактивных курсов
-- 🎥 30 видео операций
-- ✍️ 75 тестовых вопросов
-- 🏆 Система сертификации
-- 📊 Dashboard с прогрессом
-- 🔖 Система закладок
-
-**Время на загрузку:** ~3-5 минут
+*[Здесь может быть ссылка на видео-гайд]*
 
 ---
 
-**Удачи в разработке!** 💙
+## 📞 Нужна помощь?
+
+1. Прочитайте **DOWNLOAD_INSTRUCTIONS.md** (детальная инструкция)
+2. Проверьте раздел "Решение проблем"
+3. Создайте Issue: https://github.com/Serg2206/ssvnauka1/issues
+
+---
+
+## ⏱️ Сколько времени это займет?
+
+- **Установка Node.js + Git:** 5 минут
+- **Скачивание проекта:** 1 минута
+- **Установка зависимостей:** 3-5 минут
+- **Настройка БД:** 2 минуты
+- **Первый запуск:** 1 минута
+
+**Итого:** ~15 минут от начала до запуска! ⚡
+
+---
+
+## 🎨 Скриншоты
+
+### Главная страница:
+- 309 видео с уникальными градиентами
+- Фильтры по специальностям
+- Поиск по названию
+
+### Видеоплеер:
+- Встроенный плеер для Vimeo/YouTube
+- Ссылки на WebSurg/iLappSurgery
+- Информация о продолжительности
+
+### Панель управления:
+- Прогресс обучения
+- Закладки
+- Сертификаты
+
+---
+
+## 🔐 Безопасность
+
+⚠️ **Важно для продакшена:**
+
+1. Смените `NEXTAUTH_SECRET` на уникальный:
+```bash
+openssl rand -base64 32
+```
+
+2. Используйте PostgreSQL вместо SQLite
+3. Настройте HTTPS
+4. Смените пароли тестовых аккаунтов
+
+---
+
+## 🚀 Что дальше?
+
+После успешного запуска:
+
+1. **Изучите интерфейс:** Войдите под разными аккаунтами
+2. **Посмотрите видео:** Протестируйте плеер
+3. **Пройдите курс:** Получите сертификат
+4. **Настройте под себя:** Измените цвета, логотип
+5. **Добавьте контент:** Интегрируйте свои видео
+
+---
+
+## 📊 Системные требования
+
+### Минимум:
+- Windows 10, macOS 10.15+, Ubuntu 20.04+
+- 4 GB RAM
+- 2 GB свободного места
+- Node.js 18+
+
+### Рекомендуется:
+- 8+ GB RAM
+- SSD диск
+- Быстрый интернет (для первой установки)
+
+---
+
+## ✅ Чек-лист
+
+- [ ] Node.js установлен
+- [ ] Git установлен
+- [ ] Проект скачан
+- [ ] Зависимости установлены
+- [ ] Файл .env создан
+- [ ] База данных настроена
+- [ ] Сервер запущен
+- [ ] Сайт открывается
+- [ ] Вход работает
+
+**Все пункты отмечены? Поздравляем! 🎉**
+
+---
+
+## 🎓 Для разработчиков
+
+### Стек технологий:
+- **Framework:** Next.js 14 (App Router)
+- **UI:** React 18, TypeScript
+- **Styling:** Tailwind CSS, shadcn/ui
+- **Database:** Prisma ORM + SQLite/PostgreSQL
+- **Auth:** NextAuth.js
+- **Forms:** React Hook Form
+- **State:** React Hooks
+
+### Структура:
+```
+nextjs_space/
+├── app/              # Next.js App Router
+├── components/       # React компоненты
+├── lib/             # Утилиты
+├── prisma/          # База данных
+└── public/          # Статика
+```
+
+---
+
+**Версия:** 1.0  
+**Дата:** 23 ноября 2025  
+**Статус:** ✅ Готов к использованию
+
+---
+
+**Удачи! Если что-то непонятно — читайте DOWNLOAD_INSTRUCTIONS.md** 📖
