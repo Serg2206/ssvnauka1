@@ -61,6 +61,9 @@ export default async function HomePage() {
       {/* Features */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            Наши преимущества
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard
               icon={<BookOpen className="text-blue-600" size={32} />}
@@ -69,7 +72,7 @@ export default async function HomePage() {
             />
             <FeatureCard
               icon={<Video className="text-blue-600" size={32} />}
-              title="30+ видеоопераций"
+              title="311+ видеоопераций"
               description="Лапароскопические, роботизированные и открытые вмешательства от ведущих хирургов"
             />
             <FeatureCard
