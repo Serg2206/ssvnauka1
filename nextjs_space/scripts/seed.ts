@@ -3919,7 +3919,7 @@ async function main() {
       durationMinutes: 312,
       thumbnailUrl: 'https://images.unsplash.com/photo-1579154392429-0e6b4e850ad2?w=800&q=80',
     },
-    // ДОПОЛНИТЕЛЬНЫЕ ОБРАЗОВАТЕЛЬНЫЕ ЛЕКЦИИ ДЛЯ ВРАЧЕЙ (1 видео)
+    // ДОПОЛНИТЕЛЬНЫЕ ОБРАЗОВАТЕЛЬНЫЕ ЛЕКЦИИ ДЛЯ ВРАЧЕЙ (2 видео)
     // Note: Профессиональные онлайн-семинары от образовательных медицинских центров
     {
       title: 'Доцент Дворецкий С.Ю.: Рак пищевода',
@@ -3933,13 +3933,25 @@ async function main() {
       durationMinutes: 92,
       thumbnailUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
     },
+    {
+      title: 'Миниинвазивная хирургия рака пищеводно-желудочного перехода',
+      description: 'Видеозапись профессионального вебинара по миниинвазивной хирургии рака пищеводно-желудочного перехода от 4SURGEONSCLUB - Школы хирургической онкологии. Трехчасовой углубленный семинар для практикующих хирургов-онкологов, охватывающий современные малоинвазивные методы лечения опухолей пищеводно-желудочного перехода (кардиоэзофагеальный рак), включая лапароскопические и торакоскопические подходы, технику выполнения гастрэктомии и эзофагэктомии, особенности лимфодиссекции, методы реконструкции пищеводно-кишечного тракта и профилактику послеоперационных осложнений. Образовательный контент от ведущих российских специалистов в области онкохирургии для повышения квалификации хирургов.',
+      videoUrl: 'https://www.youtube.com/live/2_w8wue5bqk',
+      operationType: "GASTRECTOMY",
+      method: "LAPAROSCOPIC",
+      difficulty: "HIGH",
+      author: '4SURGEONSCLUB - Школа хирургической онкологии',
+      clinic: '4SURGEONSCLUB - School of Surgical Oncology',
+      durationMinutes: 212,
+      thumbnailUrl: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80',
+    },
   ];
 
   for (const video of videos) {
     await prisma.video.create({ data: video });
   }
 
-  console.log('✅ Видео созданы (310 видео: 219 WebSurg + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 30 других + 1 ОБРФМ.РУ)');
+  console.log('✅ Видео созданы (311 видео: 219 WebSurg + 12 SAGES + 12 MedTube + 12 GIBLIB + 12 World Laparoscopy + 12 iLappSurgery + 30 других + 1 ОБРФМ.РУ + 1 4SURGEONSCLUB)');
 
   // Создание статей (15 статей)
   const articles = [
