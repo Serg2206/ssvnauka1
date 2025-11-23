@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BookOpen, Video, FileText, Users, ArrowRight, CheckCircle, TrendingUp } from 'lucide-react';
 import { prisma } from '@/lib/db';
+import { VideoCard } from '@/components/video-card';
 
 export const dynamic = 'force-dynamic';
 
@@ -124,36 +125,7 @@ export default async function HomePage() {
             <h3 className="text-xl font-semibold text-slate-800 mb-4">Новые видеооперации</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {videos?.map((video) => (
-                <Link
-                  key={video.id}
-                  href={`/videos/${video.id}`}
-                  className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-                >
-                  <div className="relative aspect-video bg-gradient-to-br from-slate-100 to-slate-200">
-                    {video.thumbnailUrl && (
-                      <Image
-                        src={video.thumbnailUrl}
-                        alt={video.title}
-                        fill
-                        className="object-cover"
-                      />
-                    )}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <Video className="text-blue-600" size={32} />
-                      </div>
-                    </div>
-                    <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/70 text-white text-xs rounded">
-                      {video.durationMinutes} мин
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h4 className="font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
-                      {video.title}
-                    </h4>
-                    <p className="text-sm text-slate-600 line-clamp-1">{video.clinic}</p>
-                  </div>
-                </Link>
+                <VideoCard key={video.id} video={video} />
               ))}
             </div>
           </div>

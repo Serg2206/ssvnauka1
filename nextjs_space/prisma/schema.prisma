@@ -93,6 +93,14 @@ model Video {
   updatedAt       DateTime        @updatedAt
   bookmarks       Bookmark[]
   progress        VideoProgress[]
+  
+  @@index([operationType])
+  @@index([method])
+  @@index([difficulty])
+  @@index([clinic])
+  @@index([createdAt(sort: Desc)])
+  @@index([operationType, method])
+  @@index([operationType, difficulty])
 }
 
 model Article {
