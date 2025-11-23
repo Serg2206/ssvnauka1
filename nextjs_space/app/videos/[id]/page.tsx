@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Clock, Video as VideoIcon, ArrowLeft, User, Building, ExternalLink, Lock, GraduationCap, Film, Play } from 'lucide-react';
 import { prisma } from '@/lib/db';
 import { SurgicalMethod, Difficulty } from '@/lib/types';
+import { generateVideoLD, generateBreadcrumbLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,8 +24,18 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
     notFound();
   }
 
+  const videoLD = generateVideoLD(video);
+  const breadcrumbLD = generateBreadcrumbLD([
+    { name: 'Главная', url: process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app' },
+    { name: 'Видео', url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/videos` },
+    { name: video.title, url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/videos/${video.id}` },
+  ]);
+
   return (
-    <div className="min-h-screen bg-slate-50 py-12">
+    <>
+      <script {...jsonLdScriptProps(videoLD)} />
+      <script {...jsonLdScriptProps(breadcrumbLD)} />
+      <div className="min-h-screen bg-slate-50 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <Link
           href="/videos"
@@ -360,6 +371,7 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
         </div>
       </div>
     </div>
+    </>
   );
 }
 

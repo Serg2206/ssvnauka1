@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { BookOpen, Video, FileText, Users, ArrowRight, CheckCircle, TrendingUp } from 'lucide-react';
 import { prisma } from '@/lib/db';
 import { VideoCard } from '@/components/video-card';
+import { generateWebSiteLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,9 +20,12 @@ async function getNewMaterials() {
 
 export default async function HomePage() {
   const { courses, videos, articles } = await getNewMaterials();
+  const websiteLD = generateWebSiteLD();
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script {...jsonLdScriptProps(websiteLD)} />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:40px_40px]" />
@@ -205,6 +209,7 @@ export default async function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

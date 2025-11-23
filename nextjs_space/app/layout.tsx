@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/header';
 import { Providers } from '@/components/providers';
+import { generateOrganizationLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] });
 
@@ -27,8 +28,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationLD = generateOrganizationLD();
+
   return (
     <html lang="ru" suppressHydrationWarning>
+      <head>
+        <script {...jsonLdScriptProps(organizationLD)} />
+      </head>
       <body className={inter.className}>
         <Providers>
           <Header />
