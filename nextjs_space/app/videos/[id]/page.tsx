@@ -238,6 +238,57 @@ export default async function VideoPage({ params }: { params: { id: string } }) 
                     </p>
                   </div>
                 </div>
+              ) : (video.videoUrl.includes('youtube.com') && video.clinic?.includes('GIBLIB')) ? (
+                // GIBLIB Premium Medical Education Videos Display
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8">
+                  {video.thumbnailUrl && (
+                    <>
+                      <Image
+                        src={video.thumbnailUrl}
+                        alt={video.title}
+                        fill
+                        className="object-cover opacity-30"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-teal-900/95 via-teal-900/70 to-cyan-900/50" />
+                    </>
+                  )}
+                  <div className="relative z-10 text-center">
+                    <div className="mb-6 inline-flex items-center justify-center w-20 h-20 bg-teal-600/20 backdrop-blur-sm rounded-full border-2 border-teal-400/50">
+                      <Film className="text-teal-400" size={40} />
+                    </div>
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      Премиальное медицинское образование GIBLIB
+                    </h3>
+                    <p className="text-slate-300 mb-6 max-w-md">
+                      Образовательный контент от GIBLIB - премиальной потоковой платформы медицинского образования. <br/>
+                      <strong className="text-teal-400">Превью доступно на YouTube • Полная версия на watch.giblib.com</strong>
+                    </p>
+                    <div className="flex gap-4 justify-center">
+                      <a
+                        href={video.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                      >
+                        <Play size={20} />
+                        Смотреть превью на YouTube
+                      </a>
+                      <a
+                        href="https://watch.giblib.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-lg transition-all shadow-lg hover:shadow-xl hover:scale-105"
+                      >
+                        <ExternalLink size={20} />
+                        Полная версия на GIBLIB
+                      </a>
+                    </div>
+                    <p className="text-sm text-slate-400 mt-4">
+                      <ExternalLink size={14} className="inline mr-1" />
+                      Откроется в новой вкладке • 1,300+ хирургических видео • CME credits • Подписка для профессионалов
+                    </p>
+                  </div>
+                </div>
               ) : (
                 // Regular Video Player (Vimeo/YouTube)
                 <iframe
