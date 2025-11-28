@@ -44,7 +44,7 @@ then
     # Push в GitHub
     echo ""
     echo "🚀 Pushing to GitHub..."
-    git push origin master
+    git push origin main
     
     # Проверка результата
     if [ $? -eq 0 ]; then
