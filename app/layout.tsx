@@ -4,8 +4,13 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/header';
 import { Providers } from '@/components/providers';
+import { generateOrganizationLD, jsonLdScriptProps } from '@/lib/json-ld';
 
-const inter = Inter({ subsets: ['latin', 'cyrillic'] });
+const inter = Inter({ 
+  subsets: ['latin', 'cyrillic'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXTAUTH_URL || 'http://localhost:3000'),
@@ -27,12 +32,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const organizationLD = generateOrganizationLD();
+
   return (
     <html lang="ru" suppressHydrationWarning>
+      <head>
+        <script {...jsonLdScriptProps(organizationLD)} />
+      </head>
       <body className={inter.className}>
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+          Перейти к основному содержанию
+        </a>
         <Providers>
           <Header />
-          <main className="min-h-screen">
+          <main id="main-content" className="min-h-screen">
             {children}
           </main>
           <footer className="bg-slate-900 text-white py-8 mt-20">

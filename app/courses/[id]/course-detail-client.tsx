@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { useSession } from 'next-auth/react';
 import { useState, useEffect } from 'react';
 import { Clock, ArrowLeft, CheckCircle, BookmarkIcon, Trophy, BookmarkCheckIcon } from 'lucide-react';
-import { CourseLevel } from '@prisma/client';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
@@ -15,7 +14,7 @@ interface Course {
   id: string;
   title: string;
   description: string;
-  level: CourseLevel;
+  level: string;
   durationHours: number;
   imageUrl?: string | null;
 }
@@ -218,8 +217,8 @@ export default function CourseDetailClient({ course }: { course: Course }) {
   );
 }
 
-function getLevelLabel(level: CourseLevel) {
-  const labels = {
+function getLevelLabel(level: string) {
+  const labels: Record<string, string> = {
     BASIC: 'Базовый уровень',
     ADVANCED: 'Продвинутый уровень',
     EXPERT: 'Экспертный уровень',
@@ -227,8 +226,8 @@ function getLevelLabel(level: CourseLevel) {
   return labels[level] || level;
 }
 
-function getCourseBenefits(level: CourseLevel) {
-  const benefits = {
+function getCourseBenefits(level: string) {
+  const benefits: Record<string, string[]> = {
     BASIC: [
       'Фундаментальные принципы и техники',
       'Анатомические основы и топография',

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { FileText, ArrowLeft, Calendar } from 'lucide-react';
 import { prisma } from '@/lib/db';
 import ReactMarkdown from 'react-markdown';
+import { generateArticleLD, generateBreadcrumbLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,8 +23,18 @@ export default async function ArticlePage({ params }: { params: { id: string } }
     notFound();
   }
 
+  const articleLD = generateArticleLD(article);
+  const breadcrumbLD = generateBreadcrumbLD([
+    { name: 'Главная', url: process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app' },
+    { name: 'Статьи', url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/articles` },
+    { name: article.title, url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/articles/${article.id}` },
+  ]);
+
   return (
-    <div className="min-h-screen bg-slate-50 py-12">
+    <>
+      <script {...jsonLdScriptProps(articleLD)} />
+      <script {...jsonLdScriptProps(breadcrumbLD)} />
+      <div className="min-h-screen bg-slate-50 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <Link
           href="/articles"
@@ -58,5 +69,6 @@ export default async function ArticlePage({ params }: { params: { id: string } }
         </article>
       </div>
     </div>
+    </>
   );
 }

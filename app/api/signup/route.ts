@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import { prisma } from '@/lib/db';
-import { UserRole } from '@prisma/client';
+import { UserRole } from '@/lib/types';
 
 export async function POST(req: Request) {
   try {
@@ -29,9 +29,10 @@ export async function POST(req: Request) {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Ensure role is a valid UserRole enum value
-    let userRole: UserRole = UserRole.STUDENT;
-    if (role && Object.values(UserRole).includes(role)) {
+    // Ensure role is a valid UserRole value
+    const validRoles: UserRole[] = ['ADMIN', 'SURGEON', 'STUDENT'];
+    let userRole: UserRole = 'STUDENT';
+    if (role && validRoles.includes(role)) {
       userRole = role as UserRole;
     }
 

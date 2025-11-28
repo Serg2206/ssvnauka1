@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BookOpen, Video, FileText, Users, ArrowRight, CheckCircle, TrendingUp } from 'lucide-react';
 import { prisma } from '@/lib/db';
+import { VideoCard } from '@/components/video-card';
+import { generateWebSiteLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,9 +20,12 @@ async function getNewMaterials() {
 
 export default async function HomePage() {
   const { courses, videos, articles } = await getNewMaterials();
+  const websiteLD = generateWebSiteLD();
 
   return (
-    <div className="min-h-screen">
+    <>
+      <script {...jsonLdScriptProps(websiteLD)} />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:40px_40px]" />
@@ -56,6 +61,9 @@ export default async function HomePage() {
       {/* Features */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">
+            Наши преимущества
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard
               icon={<BookOpen className="text-blue-600" size={32} />}
@@ -64,7 +72,7 @@ export default async function HomePage() {
             />
             <FeatureCard
               icon={<Video className="text-blue-600" size={32} />}
-              title="30+ видеоопераций"
+              title="311+ видеоопераций"
               description="Лапароскопические, роботизированные и открытые вмешательства от ведущих хирургов"
             />
             <FeatureCard
@@ -124,36 +132,7 @@ export default async function HomePage() {
             <h3 className="text-xl font-semibold text-slate-800 mb-4">Новые видеооперации</h3>
             <div className="grid md:grid-cols-3 gap-6">
               {videos?.map((video) => (
-                <Link
-                  key={video.id}
-                  href={`/videos/${video.id}`}
-                  className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-                >
-                  <div className="relative aspect-video bg-gradient-to-br from-slate-100 to-slate-200">
-                    {video.thumbnailUrl && (
-                      <Image
-                        src={video.thumbnailUrl}
-                        alt={video.title}
-                        fill
-                        className="object-cover"
-                      />
-                    )}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center">
-                        <Video className="text-blue-600" size={32} />
-                      </div>
-                    </div>
-                    <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/70 text-white text-xs rounded">
-                      {video.durationMinutes} мин
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <h4 className="font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
-                      {video.title}
-                    </h4>
-                    <p className="text-sm text-slate-600 line-clamp-1">{video.clinic}</p>
-                  </div>
-                </Link>
+                <VideoCard key={video.id} video={video} />
               ))}
             </div>
           </div>
@@ -233,6 +212,7 @@ export default async function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

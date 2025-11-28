@@ -1,9 +1,9 @@
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { Video as VideoIcon, Clock, Filter } from 'lucide-react';
+import { Video as VideoIcon, Filter } from 'lucide-react';
 import { prisma } from '@/lib/db';
-import { OperationType, SurgicalMethod, Difficulty } from '@prisma/client';
+import { OperationType, SurgicalMethod, Difficulty } from '@/lib/types';
+import { VideoCard } from '@/components/video-card';
 
 export const dynamic = 'force-dynamic';
 
@@ -88,44 +88,7 @@ export default async function VideosPage({
         {videos && videos.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {videos.map((video) => (
-              <Link
-                key={video.id}
-                href={`/videos/${video.id}`}
-                className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all"
-              >
-                <div className="relative aspect-video bg-gradient-to-br from-slate-100 to-slate-200">
-                  {video.thumbnailUrl && (
-                    <Image
-                      src={video.thumbnailUrl}
-                      alt={video.title}
-                      fill
-                      className="object-cover"
-                    />
-                  )}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <VideoIcon className="text-blue-600" size={32} />
-                    </div>
-                  </div>
-                  <div className="absolute bottom-3 left-3 px-2 py-1 bg-black/70 text-white text-xs rounded flex items-center gap-1">
-                    <Clock size={12} />
-                    <span>{video.durationMinutes} мин</span>
-                  </div>
-                  <div className="absolute top-3 right-3 px-2 py-1 bg-white/90 backdrop-blur-sm text-xs font-medium rounded">
-                    {getMethodLabel(video.method)}
-                  </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
-                    {video.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 mb-3 line-clamp-2">{video.description}</p>
-                  <div className="space-y-1 text-sm text-slate-500">
-                    <p className="font-medium">{video.author}</p>
-                    <p>{video.clinic}</p>
-                  </div>
-                </div>
-              </Link>
+              <VideoCard key={video.id} video={video} />
             ))}
           </div>
         ) : (
@@ -139,8 +102,8 @@ export default async function VideosPage({
   );
 }
 
-function getMethodLabel(method: SurgicalMethod) {
-  const labels = {
+function getMethodLabel(method: string) {
+  const labels: Record<string, string> = {
     LAPAROSCOPIC: 'Лапароскопия',
     ROBOTIC: 'Роботизированный',
     OPEN: 'Открытый',

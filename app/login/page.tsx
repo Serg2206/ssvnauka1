@@ -116,6 +116,24 @@ export default function LoginPage() {
               </Link>
             </p>
           </div>
+
+          <div className="mt-6 pt-6 border-t border-slate-200">
+            <p className="text-sm text-slate-500 text-center mb-3 font-medium">Тестовые доступы:</p>
+            <div className="space-y-2 text-xs">
+              <div className="bg-slate-50 p-3 rounded-lg">
+                <p className="text-slate-600 font-medium mb-1">Администратор</p>
+                <p className="text-slate-700 font-mono">admin@ssvnauka.com / admin123</p>
+              </div>
+              <div className="bg-slate-50 p-3 rounded-lg">
+                <p className="text-slate-600 font-medium mb-1">Хирург</p>
+                <p className="text-slate-700 font-mono">surgeon@hospital.com / surgeon123</p>
+              </div>
+              <div className="bg-slate-50 p-3 rounded-lg">
+                <p className="text-slate-600 font-medium mb-1">Студент</p>
+                <p className="text-slate-700 font-mono">student@meduni.com / student123</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
-import { CourseLevel } from '@prisma/client';
 import CourseDetailClient from './course-detail-client';
+import { generateCourseLD, generateBreadcrumbLD, jsonLdScriptProps } from '@/lib/json-ld';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,5 +20,18 @@ export default async function CoursePage({ params }: { params: { id: string } })
     notFound();
   }
 
-  return <CourseDetailClient course={course} />;
+  const courseLD = generateCourseLD(course);
+  const breadcrumbLD = generateBreadcrumbLD([
+    { name: 'Главная', url: process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app' },
+    { name: 'Курсы', url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/courses` },
+    { name: course.title, url: `${process.env.NEXTAUTH_URL || 'https://ssvnauka-platform.abacusai.app'}/courses/${course.id}` },
+  ]);
+
+  return (
+    <>
+      <script {...jsonLdScriptProps(courseLD)} />
+      <script {...jsonLdScriptProps(breadcrumbLD)} />
+      <CourseDetailClient course={course} />
+    </>
+  );
 }
