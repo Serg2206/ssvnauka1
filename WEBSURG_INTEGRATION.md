@@ -383,6 +383,98 @@ Visit: [websurg.com/en/subscriptions](https://websurg.com/en/subscriptions)
 
 ---
 
+
+---
+
+## 🎯 Focus on General Surgery Collection
+
+**NEW COLLECTION**: 10 specialized videos on general surgery techniques
+
+### Collection Overview
+
+The "Focus on General Surgery" collection presents cutting-edge laparoscopic techniques for complex general surgical conditions:
+
+| № | Title | Duration | Difficulty | Specialty |
+|---|-------|----------|------------|-----------||
+| 1 | Aorto-mesenteric compass syndrome (Wilkie's syndrome): Hypertrophic duodenojejunostomy | 5 min | HIGH | Gastric Surgery |
+| 2 | Laparoscopic marginal resection of the inferior vena cava (IVC) with autologous vein patch | 19 min | HIGH | Vascular Surgery |
+| 3 | Video-endoscopic inguinal lymphadenectomy for Merkel cell carcinoma's nodal metastasis | 15 min | HIGH | Oncologic Surgery |
+| 4 | Post-esophagectomy hiatal hernia laparoscopic repair | 9 min | HIGH | Esophageal Surgery |
+| 5 | Laparoscopic subtotal anterograde cholecystectomy for the management of emphysematous cholecystitis | 9 min | HIGH | Hepatobiliary Surgery |
+| 6 | Linear-stapled esophagojejunostomy in laparoscopic total gastrectomy | 10 min | HIGH | Gastric Surgery |
+| 7 | Linear-stapled esophagojejunostomy in laparoscopic total gastrectomy using ICG for lymph node mapping | 10 min | HIGH | Gastric Surgery |
+| 8 | Laparoscopic treatment of median arcuate ligament syndrome (MALS): a case report | 7 min | HIGH | Vascular Surgery |
+| 9 | Principles of safe laparoscopic approach for "median arcuate ligament syndrome" (MALS) | 12 min | HIGH | Vascular Surgery |
+| 10 | Laparoscopic management of an appendiculocutaneous fistula - a video vignette | 6 min | HIGH | Colorectal Surgery |
+
+### Key Features:
+
+- **Rare Conditions**: Coverage of uncommon surgical scenarios (Wilkie's syndrome, MALS, appendiculocutaneous fistula)
+- **Advanced Techniques**: Complex vascular reconstructions, ICG-guided lymphadenectomy
+- **Expert Surgeons**: International team of specialists from leading surgical centers
+- **Comprehensive Documentation**: Detailed step-by-step demonstrations with expert commentary
+
+### Surgical Specialties Covered:
+
+1. **Vascular Surgery**: IVC resection, median arcuate ligament syndrome
+2. **Oncologic Surgery**: Lymphadenectomy for Merkel cell carcinoma
+3. **Gastric Surgery**: Advanced anastomosis techniques, ICG-guided procedures
+4. **Hepatobiliary Surgery**: Complex gallbladder surgery
+5. **Esophageal Surgery**: Post-operative hernia repair
+6. **Colorectal Surgery**: Fistula management
+
+### Collection URL:
+- **WebSurg Link**: [https://websurg.com/ru/educational-content/monthly-focus/fc01en125](https://websurg.com/ru/educational-content/monthly-focus/fc01en125)
+- **Collection Name**: "Focus on general surgery"
+- **Publisher**: IRCAD WebSurg
+- **Language**: English with subtitles available
+
+
+---
+
+## 🎯 Focus on General Surgery Collection
+
+**NEW COLLECTION**: 10 specialized videos on general surgery techniques
+
+### Collection Overview
+
+The "Focus on General Surgery" collection presents cutting-edge laparoscopic techniques for complex general surgical conditions:
+
+| № | Title | Duration | Difficulty | Specialty |
+|---|-------|----------|------------|-----------|
+| 1 | Aorto-mesenteric compass syndrome (Wilkie's syndrome): Hypertrophic duodenojejunostomy | 5 min | HIGH | Gastric Surgery |
+| 2 | Laparoscopic marginal resection of the inferior vena cava (IVC) with autologous vein patch | 19 min | HIGH | Vascular Surgery |
+| 3 | Video-endoscopic inguinal lymphadenectomy for Merkel cell carcinoma's nodal metastasis | 15 min | HIGH | Oncologic Surgery |
+| 4 | Post-esophagectomy hiatal hernia laparoscopic repair | 9 min | HIGH | Esophageal Surgery |
+| 5 | Laparoscopic subtotal anterograde cholecystectomy for the management of emphysematous cholecystitis | 9 min | HIGH | Hepatobiliary Surgery |
+| 6 | Linear-stapled esophagojejunostomy in laparoscopic total gastrectomy | 10 min | HIGH | Gastric Surgery |
+| 7 | Linear-stapled esophagojejunostomy in laparoscopic total gastrectomy using ICG for lymph node mapping | 10 min | HIGH | Gastric Surgery |
+| 8 | Laparoscopic treatment of median arcuate ligament syndrome (MALS): a case report | 7 min | HIGH | Vascular Surgery |
+| 9 | Principles of safe laparoscopic approach for "median arcuate ligament syndrome" (MALS) | 12 min | HIGH | Vascular Surgery |
+| 10 | Laparoscopic management of an appendiculocutaneous fistula - a video vignette | 6 min | HIGH | Colorectal Surgery |
+
+### Key Features:
+
+- **Rare Conditions**: Coverage of uncommon surgical scenarios (Wilkie's syndrome, MALS, appendiculocutaneous fistula)
+- **Advanced Techniques**: Complex vascular reconstructions, ICG-guided lymphadenectomy
+- **Expert Surgeons**: International team of specialists from leading surgical centers
+- **Comprehensive Documentation**: Detailed step-by-step demonstrations with expert commentary
+
+### Surgical Specialties Covered:
+
+1. **Vascular Surgery**: IVC resection, median arcuate ligament syndrome
+2. **Oncologic Surgery**: Lymphadenectomy for Merkel cell carcinoma
+3. **Gastric Surgery**: Advanced anastomosis techniques, ICG-guided procedures
+4. **Hepatobiliary Surgery**: Complex gallbladder surgery
+5. **Esophageal Surgery**: Post-operative hernia repair
+6. **Colorectal Surgery**: Fistula management
+
+### Collection URL:
+- **WebSurg Link**: [https://websurg.com/ru/educational-content/monthly-focus/fc01en125](https://websurg.com/ru/educational-content/monthly-focus/fc01en125)
+- **Collection Name**: "Focus on general surgery"
+- **Publisher**: IRCAD WebSurg
+- **Language**: English with subtitles available
+
 ## 🛠️ Future Enhancements
 
 Possible improvements:
@@ -406,8 +498,8 @@ For WebSurg-related questions:
 
 ## 🎓 Platform Stats
 
-**Total Videos**: 261 videos
-- WebSurg Professional: 219 videos (COMPLETE SURGICAL LIBRARY - 203 new videos added!)
+**Total Videos**: 271 videos
+- WebSurg Professional: 229 videos (COMPLETE SURGICAL LIBRARY - 219 базовых + 10 Focus on General Surgery!)
 - iLappSurgery Educational: 12 modules (FREE)
 - Other Sources: 30 videos
 
